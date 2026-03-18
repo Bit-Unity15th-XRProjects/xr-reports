@@ -7,7 +7,7 @@
       "architecture": 7.0,
       "overall": 4.0
     },
-    "commits": 30,
+    "commits": 31,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 8,
@@ -16,28 +16,28 @@
       0,
       0,
       0,
-      30
+      31
     ],
     "date": "2026-03-18"
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 47,
+    "progress": 48,
     "scores": {
-      "code": 4.5,
-      "architecture": 4.0,
-      "overall": 4.2
+      "code": 7.0,
+      "architecture": 7.0,
+      "overall": 7.0
     },
-    "commits": 130,
+    "commits": 133,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 4,
-    "risks": 2,
+    "issues": 2,
+    "risks": 1,
     "weekly_trend": [
       0,
       0,
       2,
-      128
+      131
     ],
     "date": "2026-03-18"
   },
@@ -49,7 +49,7 @@
       "architecture": 6.0,
       "overall": 5.2
     },
-    "commits": 66,
+    "commits": 68,
     "contributors": 2,
     "days_since_last_commit": 0,
     "issues": 2,
@@ -57,28 +57,28 @@
     "weekly_trend": [
       0,
       0,
-      17,
-      49
+      20,
+      48
     ],
     "date": "2026-03-18"
   },
   {
     "name": "Just-simulation",
-    "progress": 20,
+    "progress": 19,
     "scores": {
-      "code": 2.2,
+      "code": 2.0,
       "architecture": 8.0,
-      "overall": 5.1
+      "overall": 5.0
     },
-    "commits": 25,
+    "commits": 26,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 5,
+    "issues": 4,
     "risks": 2,
     "weekly_trend": [
       0,
       0,
-      1,
+      2,
       24
     ],
     "date": "2026-03-18"
