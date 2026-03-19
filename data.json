@@ -1,13 +1,13 @@
 [
   {
     "name": "AR_RPG",
-    "progress": 33,
+    "progress": 36,
     "scores": {
       "code": 1,
       "architecture": 7.0,
       "overall": 4.0
     },
-    "commits": 31,
+    "commits": 35,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 8,
@@ -16,19 +16,19 @@
       0,
       0,
       1,
-      30
+      34
     ],
     "date": "2026-03-19"
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 52,
+    "progress": 50,
     "scores": {
-      "code": 7.0,
+      "code": 8.5,
       "architecture": 9.0,
-      "overall": 8.0
+      "overall": 8.8
     },
-    "commits": 171,
+    "commits": 180,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 1,
@@ -36,8 +36,8 @@
     "weekly_trend": [
       0,
       0,
-      14,
-      157
+      21,
+      159
     ],
     "date": "2026-03-19"
   },
@@ -57,8 +57,8 @@
     "weekly_trend": [
       0,
       0,
-      25,
-      43
+      26,
+      42
     ],
     "date": "2026-03-19"
   },
@@ -78,8 +78,8 @@
     "weekly_trend": [
       0,
       0,
-      2,
-      30
+      3,
+      29
     ],
     "date": "2026-03-19"
   }
