@@ -7,7 +7,7 @@
       "architecture": 7.0,
       "overall": 4.0
     },
-    "commits": 38,
+    "commits": 39,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 8,
@@ -16,7 +16,7 @@
       0,
       0,
       17,
-      21
+      22
     ],
     "date": "2026-03-20"
   },
@@ -24,11 +24,11 @@
     "name": "Dumb-ways-to-die",
     "progress": 54,
     "scores": {
-      "code": 7.5,
+      "code": 6.5,
       "architecture": 9.0,
-      "overall": 8.2
+      "overall": 7.8
     },
-    "commits": 215,
+    "commits": 218,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 2,
@@ -37,19 +37,19 @@
       0,
       0,
       41,
-      174
+      177
     ],
     "date": "2026-03-20"
   },
   {
     "name": "IronSarcophagus",
-    "progress": 38,
+    "progress": 39,
     "scores": {
       "code": 3.5,
       "architecture": 10,
       "overall": 6.8
     },
-    "commits": 80,
+    "commits": 81,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 2,
@@ -57,8 +57,8 @@
     "weekly_trend": [
       0,
       0,
-      36,
-      44
+      38,
+      43
     ],
     "date": "2026-03-20"
   },
