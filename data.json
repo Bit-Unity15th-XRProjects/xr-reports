@@ -18,28 +18,28 @@
       17,
       22
     ],
-    "date": "2026-03-20"
+    "date": "2026-03-21"
   },
   {
     "name": "Dumb-ways-to-die",
     "progress": 54,
     "scores": {
-      "code": 6.5,
+      "code": 6.0,
       "architecture": 9.0,
-      "overall": 7.8
+      "overall": 7.5
     },
-    "commits": 220,
+    "commits": 222,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 2,
-    "risks": 2,
+    "risks": 1,
     "weekly_trend": [
       0,
       0,
       41,
-      179
+      181
     ],
-    "date": "2026-03-20"
+    "date": "2026-03-21"
   },
   {
     "name": "IronSarcophagus",
@@ -60,7 +60,7 @@
       38,
       43
     ],
-    "date": "2026-03-20"
+    "date": "2026-03-21"
   },
   {
     "name": "Just-simulation",
@@ -81,6 +81,6 @@
       4,
       29
     ],
-    "date": "2026-03-20"
+    "date": "2026-03-21"
   }
 ]
