@@ -70,16 +70,16 @@
       "architecture": 8.0,
       "overall": 5.1
     },
-    "commits": 33,
-    "contributors": 3,
-    "days_since_last_commit": 0,
+    "commits": 27,
+    "contributors": 2,
+    "days_since_last_commit": 1,
     "issues": 5,
     "risks": 2,
     "weekly_trend": [
       0,
       0,
       4,
-      29
+      23
     ],
     "date": "2026-03-21"
   }
