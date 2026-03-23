@@ -18,17 +18,17 @@
       17,
       22
     ],
-    "date": "2026-03-22"
+    "date": "2026-03-23"
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 54,
+    "progress": 52,
     "scores": {
       "code": 6.5,
       "architecture": 9.0,
       "overall": 7.8
     },
-    "commits": 231,
+    "commits": 232,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 2,
@@ -36,10 +36,10 @@
     "weekly_trend": [
       0,
       0,
-      42,
+      43,
       189
     ],
-    "date": "2026-03-22"
+    "date": "2026-03-23"
   },
   {
     "name": "IronSarcophagus",
@@ -49,38 +49,38 @@
       "architecture": 10,
       "overall": 6.8
     },
-    "commits": 81,
+    "commits": 82,
     "contributors": 3,
-    "days_since_last_commit": 2,
+    "days_since_last_commit": 0,
     "issues": 2,
     "risks": 2,
     "weekly_trend": [
       0,
       0,
       38,
-      43
+      44
     ],
-    "date": "2026-03-22"
+    "date": "2026-03-23"
   },
   {
     "name": "Just-simulation",
-    "progress": 19,
+    "progress": 22,
     "scores": {
       "code": 2.2,
       "architecture": 8.0,
       "overall": 5.1
     },
-    "commits": 27,
+    "commits": 28,
     "contributors": 2,
-    "days_since_last_commit": 2,
+    "days_since_last_commit": 0,
     "issues": 5,
     "risks": 2,
     "weekly_trend": [
       0,
       0,
-      5,
+      6,
       22
     ],
-    "date": "2026-03-22"
+    "date": "2026-03-23"
   }
 ]
