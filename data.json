@@ -15,20 +15,20 @@
     "weekly_trend": [
       0,
       0,
-      18,
-      21
+      19,
+      20
     ],
     "date": "2026-03-23"
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 52,
+    "progress": 54,
     "scores": {
-      "code": 6.0,
+      "code": 5.5,
       "architecture": 9.0,
-      "overall": 7.5
+      "overall": 7.2
     },
-    "commits": 240,
+    "commits": 243,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 2,
@@ -36,8 +36,8 @@
     "weekly_trend": [
       0,
       0,
-      50,
-      190
+      58,
+      185
     ],
     "date": "2026-03-23"
   },
@@ -70,7 +70,7 @@
       "architecture": 8.0,
       "overall": 5.1
     },
-    "commits": 28,
+    "commits": 29,
     "contributors": 2,
     "days_since_last_commit": 0,
     "issues": 5,
@@ -79,7 +79,7 @@
       0,
       0,
       6,
-      22
+      23
     ],
     "date": "2026-03-23"
   }
