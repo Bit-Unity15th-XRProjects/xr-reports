@@ -1,86 +1,94 @@
 [
   {
     "name": "AR_RPG",
-    "progress": 36,
+    "progress": 46,
     "scores": {
-      "code": 1,
-      "architecture": 7.0,
-      "overall": 4.0
+      "code": 5,
+      "code_reason": "BattleManager.cs(403줄)와 BattleSelectUI.cs(399줄)가 300줄 제한을 크게 초과하며, BattleManager.GetRewardItem()이 null만 반환하는 죽은 코드가 존재합니다. 반면 GpsMapPlayerMover의 GPS 노이즈 필터링과 Web Mercator 변환, MonsterSpawner의 레벨별 확률 시스템은 수학적으로 정확하고 잘 구현되어 있습니다. Singleton 초기화가 Awake()에서 Instance = this로만 처리되어 중복 인스턴스 보호가 없고, static 가변 상태(FieldPaused, FieldCameraRef 등)가 씬 전환 시 예측 불가능한 버그를 유발할 수 있습니다.",
+      "architecture": 5,
+      "architecture_reason": "Singleton 패턴을 6개 클래스에서 사용하고 있으나 모두 보호 없는 단순 할당(Instance = this)이며, BattleSelectionContext static 클래스로 씬 간 데이터 전달하는 구조는 작동하지만 확장성이 낮습니다. ARRPG.Inventory, ARRPG.Level, ARRPG.Victory, ARRPG.LimChaeSung 네임스페이스를 분리한 것은 좋으나, 핵심 전투 스크립트 15개가 글로벌 네임스페이스에 있어 일관성이 없습니다. Additive 씬 로딩으로 필드↔배틀 전환을 구현한 설계는 AR 게임에 적합하나, HideInGameSceneRootsExcept()로 루트 오브젝트를 숨기는 방식은 씬이 복잡해지면 성능 문제가 될 수 있습니다.",
+      "overall": 5
     },
     "commits": 39,
     "contributors": 3,
     "days_since_last_commit": 3,
-    "issues": 8,
-    "risks": 2,
+    "issues": 10,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
       23,
       16
     ],
-    "date": "2026-03-23"
+    "date": "2026-03-24"
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 52,
+    "progress": 0,
     "scores": {
-      "code": 5.0,
-      "architecture": 9.0,
-      "overall": 7.0
+      "code": 0,
+      "architecture": 0,
+      "overall": 0,
+      "code_reason": "",
+      "architecture_reason": ""
     },
     "commits": 253,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 2,
-    "risks": 1,
+    "issues": 0,
+    "risks": 0,
     "weekly_trend": [
       0,
       0,
-      69,
-      184
+      73,
+      180
     ],
-    "date": "2026-03-23"
+    "date": "2026-03-24"
   },
   {
     "name": "IronSarcophagus",
-    "progress": 39,
+    "progress": 0,
     "scores": {
-      "code": 3.5,
-      "architecture": 10,
-      "overall": 6.8
+      "code": 0,
+      "architecture": 0,
+      "overall": 0,
+      "code_reason": "",
+      "architecture_reason": ""
     },
     "commits": 84,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 2,
-    "risks": 2,
+    "issues": 0,
+    "risks": 0,
     "weekly_trend": [
       0,
       0,
-      40,
-      44
+      41,
+      43
     ],
-    "date": "2026-03-23"
+    "date": "2026-03-24"
   },
   {
     "name": "Just-simulation",
-    "progress": 22,
+    "progress": 0,
     "scores": {
-      "code": 2.2,
-      "architecture": 8.0,
-      "overall": 5.1
+      "code": 0,
+      "architecture": 0,
+      "overall": 0,
+      "code_reason": "",
+      "architecture_reason": ""
     },
-    "commits": 33,
+    "commits": 35,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 5,
-    "risks": 2,
+    "issues": 0,
+    "risks": 0,
     "weekly_trend": [
       0,
       0,
       6,
-      27
+      29
     ],
-    "date": "2026-03-23"
+    "date": "2026-03-24"
   }
 ]
