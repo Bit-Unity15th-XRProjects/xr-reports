@@ -1,88 +1,19 @@
 [
   {
-    "name": "AR_RPG",
-    "progress": 52,
-    "scores": {
-      "code": 5,
-      "code_reason": "switch expression(BattleManager의 GetBaseMaxHpByGrade), ScriptableObject 활용(Item.cs), 코루틴 기반 비동기 처리(GpsMapPlayerMover.Start) 등 C# 최신 기능을 적절히 사용. 그러나 BattleManager(403줄), BattleSelectUI(399줄), GpsMapPlayerMover(341줄), Monster(331줄) 총 4개 파일이 300줄 제한을 초과하고, Monster.ApplyVisualByGradeType()은 90줄 이상의 거대 메서드임. GetRewardItem()이 null 반환 스텁, VictoryController.ToggleVictory()의 모순 로직, SpawnProbUI에서 매 프레임 FindObjectOfType 호출 등 미완성/비효율 코드가 산재.",
-      "architecture": 5,
-      "architecture_reason": "Singleton 패턴(BattleManager.Instance, LevelManager.Instance 등)을 일관되게 사용하고, BattleSelectionContext 정적 클래스로 씬 간 데이터 전달, 네임스페이스와 Assembly Definition으로 모듈 분리를 시도한 점은 좋음. 그러나 모든 매니저가 Singleton이라 클래스 간 결합도가 매우 높고(BattleManager→LevelManager→MonsterSpawner→InventoryController 직접 참조), 이벤트 시스템이나 인터페이스 없이 Instance 직접 접근만 사용하여 테스트/확장이 어려운 구조.",
-      "overall": 5
-    },
-    "commits": 39,
-    "contributors": 3,
-    "days_since_last_commit": 3,
-    "issues": 10,
-    "risks": 5,
-    "weekly_trend": [
-      0,
-      0,
-      23,
-      16
-    ],
-    "date": "2026-03-24"
-  },
-  {
-    "name": "Dumb-ways-to-die",
-    "progress": 65,
-    "scores": {
-      "code": 8,
-      "code_reason": "DeathCameraEffect.cs는 슬로모션→프리즈→상승→회전→결과패널이라는 복잡한 VR 사망 시퀀스를 코루틴으로 깔끔하게 구현했고, PhysicsKnockback 경로와 일반 경로를 분기 처리합니다. EatDeathTrigger.cs는 State enum(Idle→Eating→Done)으로 상태 머신을 명확히 구현했고, VContainer [Inject]로 StageCommonSystem을 주입받습니다. 다만 StageHapticPlayer.cs(333줄)가 권장 라인 수(300줄)를 초과하고, HeadTrackingController의 리플렉션 기반 타입 조회(Type.GetType with assembly name)는 Unity 버전 업그레이드 시 깨질 수 있는 취약점입니다.",
-      "architecture": 8,
-      "architecture_reason": "Singleton(VRRigBuilder, GameManager) + Observer 패턴(OnPlayerDeath, OnRigReady, OnStageResultRecorded) + Template Method(BaseDeathEffect → 6개 구현체) + DI(VContainer StageScope)를 적절히 조합한 이벤트 드리븐 아키텍처입니다. 클래스 간 결합도가 낮고 static 이벤트로 통신하여 새 스테이지 추가 시 기존 코드 수정이 불필요합니다. RuntimeInitializeOnLoadMethod로 부트스트랩 순서를 보장하고, 'sticky' 이벤트 패턴으로 레이스 컨디션을 해결한 점이 인상적입니다. 다만 모든 사망 이펙트가 static 이벤트에 의존하여, 이벤트 구독 해제를 놓치면 메모리 누수가 발생할 수 있습니다.",
-      "overall": 7
-    },
-    "commits": 253,
-    "contributors": 3,
-    "days_since_last_commit": 0,
-    "issues": 9,
-    "risks": 5,
-    "weekly_trend": [
-      0,
-      0,
-      81,
-      172
-    ],
-    "date": "2026-03-24"
-  },
-  {
-    "name": "IronSarcophagus",
-    "progress": 46,
-    "scores": {
-      "code": 7,
-      "code_reason": "코드 품질이 전반적으로 높습니다. DamageInfo 구조체의 EffectivePenetrationMm 계산, ArmorProfile.GetThickness()의 방향 판정, EnemyTank의 5점 노출도 레이캐스트 등 게임 메커닉 구현이 정교합니다. 네임스페이스 분리(Core/Network/Tank.Gunner/Enemy/UI)가 체계적이고, GameConst로 상수를 중앙 관리하는 것도 좋습니다. 다만 AuthUI/LobbiesUI의 'Netowork' 네임스페이스 오타, EnemyTank.cs 736줄의 과도한 파일 크기, RoleSync.OnNetworkDespawn()에서 람다로 이벤트 해제 시 원본과 다른 인스턴스가 생성되어 실제로 해제되지 않는 버그가 문제입니다.",
-      "architecture": 8,
-      "architecture_reason": "서버 권한 모델이 일관되게 적용되어 있고(모든 게임플레이 판정이 서버에서), NetworkVariable과 RPC의 용도 구분이 명확합니다(지속 상태=NetworkVariable, 일회성 명령=RPC). RoleSync를 중심으로 한 역할 기반 접근 제어가 AimController, BarrelLoader, TankDriver 등 모든 스테이션 컴포넌트에 일관 적용됩니다. IDamageable 인터페이스로 플레이어 탱크와 적이 동일한 데미지 파이프라인을 공유하며, SplashDamageUtils가 AOE 로직을 중앙화한 것도 좋은 설계입니다. 다만 RoleSync가 Singleton인 점은 멀티 탱크 확장 시 제약이 될 수 있습니다.",
-      "overall": 7
-    },
-    "commits": 86,
-    "contributors": 3,
-    "days_since_last_commit": 0,
-    "issues": 10,
-    "risks": 5,
-    "weekly_trend": [
-      0,
-      0,
-      42,
-      44
-    ],
-    "date": "2026-03-24"
-  },
-  {
     "name": "Just-simulation",
-    "progress": 0,
+    "progress": 15,
     "scores": {
-      "code": 0,
-      "architecture": 0,
-      "overall": 0,
-      "code_reason": "",
-      "architecture_reason": ""
+      "code": 1,
+      "code_reason": "main 브랜치에 커스텀 C# 스크립트가 단 하나도 존재하지 않음(cs: 0). 모든 코드가 미병합 브랜치에만 있어 코드 품질을 평가할 수 없음. 팀이 40개의 커밋을 작성했지만 main에 한 번도 병합하지 않은 것은 심각한 워크플로우 문제.",
+      "architecture": 2,
+      "architecture_reason": "프로젝트 패키지 구성(OpenXR, XRI Toolkit, URP)은 VR 프로젝트로서 적절하나, 커스텀 Assembly Definition이 없고 main에 코드가 없어 아키텍처를 평가할 수 없음. 커밋 메시지에서 UI 리팩토링(UI_Archetectures, ReFactoring)이 진행 중인 것으로 보이나, 3개 브랜치가 각각 독립적으로 36, 22, 2커밋씩 분기되어 있어 통합 시 아키텍처 충돌이 우려됨.",
+      "overall": 2
     },
     "commits": 40,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 0,
-    "risks": 0,
+    "issues": 7,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
