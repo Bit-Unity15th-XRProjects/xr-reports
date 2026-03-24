@@ -1,12 +1,12 @@
 [
   {
     "name": "AR_RPG",
-    "progress": 46,
+    "progress": 47,
     "scores": {
       "code": 5,
-      "code_reason": "BattleManager.cs(403줄)와 BattleSelectUI.cs(399줄)가 300줄 제한을 크게 초과하며, BattleManager.GetRewardItem()이 null만 반환하는 죽은 코드가 존재합니다. 반면 GpsMapPlayerMover의 GPS 노이즈 필터링과 Web Mercator 변환, MonsterSpawner의 레벨별 확률 시스템은 수학적으로 정확하고 잘 구현되어 있습니다. Singleton 초기화가 Awake()에서 Instance = this로만 처리되어 중복 인스턴스 보호가 없고, static 가변 상태(FieldPaused, FieldCameraRef 등)가 씬 전환 시 예측 불가능한 버그를 유발할 수 있습니다.",
+      "code_reason": "BattleManager.cs의 GetScaledMaxHp()/GetScaledXpReward() 등 수치 스케일링 로직이 깔끔하게 구현되어 있고, MonsterSpawner.cs의 레벨 기반 확률 시스템도 명확함. 그러나 BattleManager가 403줄로 전투 로직+UI 업데이트+아이템 생성+씬 관리를 모두 담당하는 God Object 문제가 있고, GetRewardItem()이 null 리턴 스텁으로 방치됨. DeviceCameraBackground.cs와 InventoryController.cs에 인코딩 깨진 주석이 다수 존재하여 코드 가독성을 해침.",
       "architecture": 5,
-      "architecture_reason": "Singleton 패턴을 6개 클래스에서 사용하고 있으나 모두 보호 없는 단순 할당(Instance = this)이며, BattleSelectionContext static 클래스로 씬 간 데이터 전달하는 구조는 작동하지만 확장성이 낮습니다. ARRPG.Inventory, ARRPG.Level, ARRPG.Victory, ARRPG.LimChaeSung 네임스페이스를 분리한 것은 좋으나, 핵심 전투 스크립트 15개가 글로벌 네임스페이스에 있어 일관성이 없습니다. Additive 씬 로딩으로 필드↔배틀 전환을 구현한 설계는 AR 게임에 적합하나, HideInGameSceneRootsExcept()로 루트 오브젝트를 숨기는 방식은 씬이 복잡해지면 성능 문제가 될 수 있습니다.",
+      "architecture_reason": "Singleton 패턴을 일관되게 사용하고(BattleManager, LevelManager, InventoryController, VictoryController), 씬 분리(InGame+BattleScene additive)와 namespace 분리(ARRPG.*)가 되어 있어 기본 구조는 잡혀 있음. 그러나 시스템 간 통신이 static 필드(MonsterSpawner.FieldPaused, BattleSelectionContext)와 싱글톤 직접 참조에 전적으로 의존하여 결합도가 매우 높고, 이벤트 시스템이나 중재자 패턴이 전혀 없어 기능 추가/테스트가 어려운 구조임. 통합 GameManager 없이 7+개의 독립 싱글톤이 산재해 있어 초기화 순서 문제가 발생할 수 있음.",
       "overall": 5
     },
     "commits": 39,
@@ -40,26 +40,26 @@
     "weekly_trend": [
       0,
       0,
-      73,
-      180
+      81,
+      172
     ],
     "date": "2026-03-24"
   },
   {
     "name": "IronSarcophagus",
-    "progress": 0,
+    "progress": 53,
     "scores": {
-      "code": 0,
-      "architecture": 0,
-      "overall": 0,
-      "code_reason": "",
-      "architecture_reason": ""
+      "code": 7,
+      "code_reason": "대부분의 파일이 깔끔한 코드 품질을 유지하며 NetworkBehaviour 라이프사이클을 올바르게 처리합니다. FireSystem.cs(119줄), TankDriver.cs(277줄), StationMapUI.cs(217줄) 등은 메서드/파일 크기 가이드라인을 잘 준수합니다. 그러나 EnemyTank.cs가 736줄로 300줄 제한을 크게 초과하고 AILoop()가 101줄에 달하며, RoleSync.OnNetworkDespawn의 인라인 람다 구독 해제 버그는 실제 메모리 누수를 유발하는 심각한 문제입니다.",
+      "architecture": 8,
+      "architecture_reason": "어셈블리 정의로 모듈 간 의존성을 명확히 제어하고, Singleton(GameManager, RoleSync, ProjectilePoolManager), Observer(NetworkVariable.OnValueChanged, OnFireRequested 이벤트), Template Method(EnemyBase.OnServerSpawn), Object Pool(ProjectilePoolManager) 등 적절한 디자인 패턴을 활용합니다. 서버 권위(데미지/스폰) + 소유자 권위(입력) 하이브리드 네트워크 아키텍처가 VR 멀티플레이에 적합하게 설계되었습니다. 다만 GameManager.Workflow()의 거대 switch문과 EnemyTank의 단일 클래스 과부하는 개선이 필요합니다.",
+      "overall": 7
     },
     "commits": 84,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 0,
-    "risks": 0,
+    "issues": 10,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
@@ -78,7 +78,7 @@
       "code_reason": "",
       "architecture_reason": ""
     },
-    "commits": 35,
+    "commits": 36,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 0,
@@ -87,7 +87,7 @@
       0,
       0,
       6,
-      29
+      30
     ],
     "date": "2026-03-24"
   }
