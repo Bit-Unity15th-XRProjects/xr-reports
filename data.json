@@ -1,17 +1,19 @@
 [
   {
     "name": "AR_RPG",
-    "progress": 36,
+    "progress": 43,
     "scores": {
-      "code": 1,
-      "architecture": 7.0,
-      "overall": 4.0
+      "code": 5,
+      "code_reason": "BattleManager의 HP/XP 스케일링 공식(GetScaledMaxHp, GetScaledXpReward)과 MonsterSpawner의 레벨별 확률 시스템은 잘 설계됨. 그러나 BattleManager가 403줄로 전투 로직+아이템 생성+씬 관리+UI 참조를 모두 담당하여 SRP를 위반하고, GetRewardItem()이 null만 반환하는 미완성 스텁이 방치됨. Monster.ApplyVisualByGradeType()이 140~241줄로 100줄에 달하며 렌더러 탐색, 스프라이트 생성, 머티리얼 할당, 스케일 적용을 한 메서드에서 모두 처리함.",
+      "architecture": 5,
+      "architecture_reason": "Singleton 패턴(BattleManager, LevelManager, InventoryController, VictoryController, DefeatController, ExpUIController 총 6개)에 과도하게 의존하며, 씬 간 데이터 전달을 BattleSelectionContext static 클래스와 MonsterSpawner의 static 필드(FieldCameraRef, ArCameraRef, FieldPaused)로 처리하여 결합도가 높음. ARRPG 네임스페이스 분리와 asmdef 활용은 좋으나, BattleManager가 Inventory/Level/Victory 네임스페이스를 직접 참조하여 의존 방향이 단방향이 아닌 양방향에 가까움.",
+      "overall": 5
     },
     "commits": 39,
     "contributors": 3,
     "days_since_last_commit": 3,
-    "issues": 8,
-    "risks": 2,
+    "issues": 10,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
@@ -22,63 +24,69 @@
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 52,
+    "progress": 74,
     "scores": {
-      "code": 5.0,
-      "architecture": 9.0,
-      "overall": 7.0
+      "code": 8,
+      "code_reason": "BaseDeathEffect의 템플릿 메서드 패턴, InteractableStateBase의 상태 머신 추상화, PlayerInteractionBlocker의 InteractionLayerMask 저장/복원 로직 등 고급 패턴을 적절히 활용합니다. StageHapticPlayer는 SinglePulse/Pattern/Ramp 3가지 모드를 코루틴으로 깔끔하게 구현했고, EatDeathTrigger는 Idle→Eating→Done 상태 머신이 명확합니다. 다만 ResultScreenSystem에서 TMP용 Material을 매번 새로 생성하는 문제, MicrowaveDeathEffect의 하드코딩된 충전 시간(3f), 씬 이름 문자열 하드코딩 등 소규모 기술 부채가 존재합니다.",
+      "architecture": 8,
+      "architecture_reason": "VContainer를 활용한 스테이지별 DI 스코프(StageScope), 정적 이벤트 기반의 느슨한 결합(OnPlayerDeath, OnExplosionStarted, OnCameraRiseComplete 등), 7개 asmdef를 통한 어셈블리 경계 분리가 학생 프로젝트 수준을 크게 넘어섭니다. GameBootstrap의 RuntimeInitializeOnLoadMethod를 이용한 자동 부트스트래핑은 어떤 씬에서든 바로 테스트 가능하게 하여 개발 효율을 높였습니다. 다만 싱글톤(VRRigBuilder.Instance, GameManager)과 DI가 혼용되어 있고, 이벤트 발행 순서가 문서화되지 않아 새 팀원이 흐름을 파악하기 어려울 수 있습니다.",
+      "overall": 8
     },
     "commits": 254,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 2,
-    "risks": 1,
+    "issues": 10,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
-      97,
-      157
+      100,
+      154
     ],
     "date": "2026-03-24"
   },
   {
     "name": "IronSarcophagus",
-    "progress": 42,
+    "progress": 55,
     "scores": {
-      "code": 3.0,
-      "architecture": 10,
-      "overall": 6.5
+      "code": 7,
+      "code_reason": "전반적으로 높은 코드 품질. DamageInfo의 HitAngleDeg/EffectivePenetrationMm 프로퍼티, EnemyTank의 CalculateExposure() 5점 레이캐스트, SplashDamageUtils의 HashSet 중복 방지 등 세심한 구현이 돋보임. 그러나 RoleSync.OnNetworkDespawn()에서 람다로 이벤트 구독해제하는 버그(새 람다 인스턴스라 실제로 해제 안 됨), GameManager.cs InLobby/InGamePlaying 상태에서 NetworkManager.Singleton.Shutdown() 호출 시 if 블록 중괄호가 누락된 들여쓰기 오류, EnemyTank가 736줄로 300줄 가이드라인 초과가 문제.",
+      "architecture": 8,
+      "architecture_reason": "Netcode for GameObjects 패턴을 정확히 활용한 설계. NetworkVariable(Owner write) + RPC(Server validation) 조합으로 포탑 조준은 저지연, 발사/장전은 서버 권위적으로 처리하는 이원 구조가 우수. IDamageable 인터페이스 + DamageInfo 구조체로 데미지 시스템을 추상화하여 플레이어 탱크와 적이 동일 파이프라인 공유. EnemyBase 상속 계층(EnemyTank/EnemyLightVehicle/EnemyInfantry)으로 적 AI를 체계적으로 확장. 다만 RoleSync.Instance 싱글톤이 다중 탱크 시나리오에서 확장 불가한 구조적 한계가 있음.",
+      "overall": 7
     },
-    "commits": 88,
+    "commits": 89,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 2,
-    "risks": 2,
+    "issues": 10,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
-      50,
+      51,
       38
     ],
     "date": "2026-03-24"
   },
   {
     "name": "Just-simulation",
-    "progress": 28,
+    "progress": 41,
     "scores": {
-      "code": 2.2,
-      "architecture": 8.0,
-      "overall": 5.1
+      "code": 5,
+      "code_reason": "TestWeapon과 BreakableHealth의 충돌→데미지→파괴 흐름은 잘 구현되어 있으나, 코드 전반에 오타가 많고(Pressentation, Eternitiy, paranetinfo), FractureFinalRunner.cs에 두 클래스가 한 파일에 있으며 FractureFinalRunner 자체는 빈 클래스입니다. SoundData/StageData의 하드코딩, LinkedButtonInfo.GetTypedata()의 비효율적 LINQ enum 매칭, StageButtonInfo의 태그 기반 스테이지 식별 등 개선이 필요합니다.",
+      "architecture": 5,
+      "architecture_reason": "UI 시스템은 Core/Model/Presentation 3계층 분리와 이벤트 기반 디스패칭(UIManager → Event 클래스 → Presentation)으로 MVP 패턴을 시도한 점이 좋습니다. 하지만 게임 전체를 관리하는 GameManager가 없어 게임 루프가 존재하지 않고, 데이터 계층이 하드코딩에 의존하며, Fracture 시스템과 UI 시스템 간 연결(점수, 진행도 등)이 전혀 없어 두 시스템이 사실상 독립적으로 존재합니다.",
+      "overall": 5
     },
-    "commits": 41,
+    "commits": 42,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 5,
-    "risks": 1,
+    "issues": 10,
+    "risks": 5,
     "weekly_trend": [
       0,
       0,
-      10,
+      11,
       31
     ],
     "date": "2026-03-24"
