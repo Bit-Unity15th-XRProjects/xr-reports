@@ -1,24 +1,85 @@
 [
   {
-    "name": "Just-simulation",
-    "progress": 0,
+    "name": "AR_RPG",
+    "progress": 36,
     "scores": {
-      "code": 0,
-      "architecture": 0,
-      "overall": 0,
-      "code_reason": "",
-      "architecture_reason": ""
+      "code": 1,
+      "architecture": 7.0,
+      "overall": 4.0
+    },
+    "commits": 39,
+    "contributors": 3,
+    "days_since_last_commit": 3,
+    "issues": 8,
+    "risks": 2,
+    "weekly_trend": [
+      0,
+      0,
+      23,
+      16
+    ],
+    "date": "2026-03-24"
+  },
+  {
+    "name": "Dumb-ways-to-die",
+    "progress": 52,
+    "scores": {
+      "code": 5.0,
+      "architecture": 9.0,
+      "overall": 7.0
+    },
+    "commits": 253,
+    "contributors": 3,
+    "days_since_last_commit": 0,
+    "issues": 2,
+    "risks": 1,
+    "weekly_trend": [
+      0,
+      0,
+      81,
+      172
+    ],
+    "date": "2026-03-24"
+  },
+  {
+    "name": "IronSarcophagus",
+    "progress": 39,
+    "scores": {
+      "code": 3.5,
+      "architecture": 10,
+      "overall": 6.8
+    },
+    "commits": 86,
+    "contributors": 3,
+    "days_since_last_commit": 0,
+    "issues": 2,
+    "risks": 2,
+    "weekly_trend": [
+      0,
+      0,
+      42,
+      44
+    ],
+    "date": "2026-03-24"
+  },
+  {
+    "name": "Just-simulation",
+    "progress": 24,
+    "scores": {
+      "code": 2.2,
+      "architecture": 8.0,
+      "overall": 5.1
     },
     "commits": 38,
     "contributors": 3,
     "days_since_last_commit": 0,
-    "issues": 0,
-    "risks": 0,
+    "issues": 5,
+    "risks": 2,
     "weekly_trend": [
       0,
       0,
-      7,
-      31
+      8,
+      30
     ],
     "date": "2026-03-24"
   }
