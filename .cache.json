@@ -1,0 +1,2394 @@
+{
+  "AR_RPG": {
+    "project": {
+      "name": "AR_RPG",
+      "dir": "AR_RPG",
+      "repo": "AR_RPG",
+      "description": "AR 위치기반 몬스터 RPG",
+      "platform": "Android AR",
+      "primary_branch": "main",
+      "expected_systems": [
+        "BattleManager",
+        "Monster",
+        "MonsterSpawner",
+        "LevelManager",
+        "InventoryController",
+        "GpsMapPlayerMover",
+        "MapGrid",
+        "VictoryController",
+        "SaveManager",
+        "SoundManager"
+      ]
+    },
+    "git": {
+      "total_commits": 39,
+      "contributors": [
+        {
+          "name": "kimin",
+          "commits": 17,
+          "last_date": "2026-03-19",
+          "days_inactive": 11
+        },
+        {
+          "name": "KSJ",
+          "commits": 8,
+          "last_date": "2026-03-18",
+          "days_inactive": 12
+        },
+        {
+          "name": "Lachesis",
+          "commits": 6,
+          "last_date": "2026-03-20",
+          "days_inactive": 9
+        }
+      ],
+      "branches": [
+        {
+          "name": "origin/LimChaesung",
+          "ahead": 10,
+          "behind": 7,
+          "last_activity": "2026-03-20"
+        },
+        {
+          "name": "(HEAD detached at origin/main)",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "N/A"
+        },
+        {
+          "name": "main",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "2026-03-19"
+        },
+        {
+          "name": "origin/Feat.Monster",
+          "ahead": 0,
+          "behind": 28,
+          "last_activity": "2026-03-12"
+        },
+        {
+          "name": "origin/Feat_Inventory",
+          "ahead": 0,
+          "behind": 23,
+          "last_activity": "2026-03-13"
+        },
+        {
+          "name": "origin",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "2026-03-19"
+        },
+        {
+          "name": "origin/Timer,ItemAttackPower",
+          "ahead": 0,
+          "behind": 9,
+          "last_activity": "2026-03-17"
+        },
+        {
+          "name": "origin/feat/ingame",
+          "ahead": 0,
+          "behind": 28,
+          "last_activity": "2026-03-12"
+        },
+        {
+          "name": "origin/mobileCamera",
+          "ahead": 0,
+          "behind": 5,
+          "last_activity": "2026-03-19"
+        }
+      ],
+      "last_commit_date": "2026-03-20",
+      "last_commit_msg": "[Quote] making vfx",
+      "recent_commits": [
+        {
+          "hash": "27aa882",
+          "author": "Lachesis",
+          "date": "2026-03-20",
+          "message": "[Quote] making vfx"
+        },
+        {
+          "hash": "71277b9",
+          "author": "Lachesis",
+          "date": "2026-03-19",
+          "message": "[Feat] Effect"
+        },
+        {
+          "hash": "63d101b",
+          "author": "kimin",
+          "date": "2026-03-19",
+          "message": "코드 이슈 최적화"
+        },
+        {
+          "hash": "18f38cd",
+          "author": "kimin",
+          "date": "2026-03-19",
+          "message": "Update 캐싱 최적화"
+        },
+        {
+          "hash": "dbe845d",
+          "author": "kimin",
+          "date": "2026-03-19",
+          "message": "몬스터 생성시 큐브에서 이미지로 변경"
+        },
+        {
+          "hash": "d1c05e2",
+          "author": "kimin",
+          "date": "2026-03-19",
+          "message": "타이머 ui 위치 조정"
+        },
+        {
+          "hash": "c0a1c8b",
+          "author": "kimin",
+          "date": "2026-03-19",
+          "message": "타이머 ui 위치 조정"
+        },
+        {
+          "hash": "9509fd3",
+          "author": "kimin",
+          "date": "2026-03-19",
+          "message": "모바일 카메라 추가"
+        },
+        {
+          "hash": "7b14bad",
+          "author": "Lachesis",
+          "date": "2026-03-18",
+          "message": "[Feat] ShaderGraph Nod Created"
+        },
+        {
+          "hash": "10f6098",
+          "author": "KSJ",
+          "date": "2026-03-18",
+          "message": "몬스터, 아이템 드롭, HP/EXP 레벨스케일링"
+        },
+        {
+          "hash": "a642c5c",
+          "author": "KSJ",
+          "date": "2026-03-18",
+          "message": "몬스터 출현, 아이템 획득률, 레벨 스케일링"
+        },
+        {
+          "hash": "6b6c3cc",
+          "author": "KSJ",
+          "date": "2026-03-17",
+          "message": "몬스터 제한시간, 아이템공격력"
+        },
+        {
+          "hash": "ce79da5",
+          "author": "kimin",
+          "date": "2026-03-17",
+          "message": "monster image Change"
+        },
+        {
+          "hash": "54c7254",
+          "author": "kimin",
+          "date": "2026-03-17",
+          "message": "new : Expbar, LevelTxt , SpawnProb,"
+        },
+        {
+          "hash": "756ce78",
+          "author": "KSJ",
+          "date": "2026-03-16",
+          "message": "Monster_image_List"
+        }
+      ],
+      "commits_per_week": 0,
+      "primary_branch": "main",
+      "days_since_last_commit": 9,
+      "weekly_trend": [
+        0,
+        21,
+        18,
+        0
+      ],
+      "unmerged_branches": 1
+    },
+    "claude": {
+      "progress_pct": 58,
+      "phases": {
+        "foundation": {
+          "score": 4,
+          "reason": "Unity 프로젝트 구조가 잘 갖춰져 있음. Scripts 폴더가 Core, Data, Inventory, Level, Map, Victory 등 기능별로 분리되어 있고, 씬 8개(InGame, BattleScene 등), 프리팹 5개, ScriptableObject 4개가 존재. 네임스페이스도 ARRPG.Inventory, ARRPG.Level, ARRPG.Victory, ARRPG.LimChaeSung 등 부분적으로 사용 중. asmdef 파일 9개로 어셈블리 분리도 시도함. 다만 일부 핵심 스크립트(BattleManager, Monster 등)는 네임스페이스 없이 글로벌 스코프에 있어 일관성이 부족함."
+        },
+        "core_systems": {
+          "score": 20,
+          "reason": "구현된 핵심 시스템: (1) BattleManager - HP/XP 레벨 스케일링, 제한시간 타이머, 무기 드롭 확률, 승리/패배 분기가 실제 로직으로 구현됨. (2) Monster - 등급(Normal/Rare/Epic)·타입(Slime/Beast/Golem) 시스템, 배회 AI, 도주 행동, Resources 기반 스프라이트 로딩이 동작함. (3) MonsterSpawner - 레벨 기반 등급 확률 조정, 범위 기반 스폰/디스폰, 배틀 씬 전환 로직이 완성됨. (4) GpsMapPlayerMover - GPS 좌표→월드 좌표 변환, 노이즈 필터링, 에디터 목업이 구현됨. (5) BattleSelectUI - 몬스터 리스트, 슬라이드 패널, 등급별 색상 표시. (6) InventoryController - 핫파일에 5회 변경, 6개 파일 존재하나 코드 미제공으로 상세 확인 불가. (7) LevelManager - BattleManager와 MonsterSpawner에서 .Instance.currentLevel로 참조됨. (8) VictoryController - BattleManager에서 VictoryController.Instance.VictoryUI로 호출됨. 다만 SaveManager와 SoundManager는 코드에서 참조되지 않으며, GetRewardItem()이 null을 반환하는 스텁 상태."
+        },
+        "integration": {
+          "score": 17,
+          "reason": "게임 루프가 존재함: GpsMapPlayerMover로 필드 이동 → MonsterSpawner가 범위 내 몬스터 스폰 → BattleSelectUI로 몬스터 선택 → MonsterSpawner.EnterBattle()로 BattleScene 전환 → BattleManager에서 전투 진행 → VictoryController로 승리 처리 또는 TimeOutDefeat()로 패배 처리 → ReturnToField()로 복귀. BattleSelectionContext 정적 클래스로 씬 간 몬스터 정보 전달. MonsterSpawner.HideInGameSceneRootsExcept()와 RestoreInGameSceneRoots()로 씬 전환 시 오브젝트 관리. fieldCamera/arCamera 전환으로 필드↔배틀 카메라 관리. LevelManager.Instance.currentLevel이 MonsterSpawner의 확률 계산과 BattleManager의 HP 스케일링에 모두 연결됨. 다만 저장/로드 시스템이 없어 게임 진행 상태 유지 불가, 인벤토리와 배틀 보상 간 연결(GetRewardItem()이 null)이 미완성."
+        },
+        "content": {
+          "score": 7,
+          "reason": "몬스터 이미지 에셋이 Resources/Monsters/ 아래 타입별(Slime, Beast, Golem) × 등급별(Normal, Rare, Epic)로 총 18개 구성되어 있으며, Monster.LoadMonsterSprite()에서 실제 로드됨. 프리팹 5개, 머티리얼 4개, 애니메이션 2개 존재. GpsMapPlayerMover에서 Animator를 사용하고 MonsterSelectableOutline에서 동적 메쉬 생성으로 시각 효과 구현. 그러나 오디오 파일이 0개이고 SoundManager가 없어 게임에 소리가 전혀 없음. FBX 모델도 0개로 3D 몬스터 모델 대신 2D 스프라이트 Quad를 사용 중. 최근 커밋에서 VFX 작업(ShaderGraph)이 진행 중이나 아직 main에 미병합."
+        },
+        "polish": {
+          "score": 10,
+          "reason": "UI 완성도: 배틀 타이머(텍스트+슬라이더+원형게이지), 경험치바, 레벨텍스트, 몬스터 HP바, 등급별 색상 표시, 슬라이드 패널 애니메이션 등 상당한 UI 작업이 완료됨. MonsterSelectableOutline에서 바닥 링으로 탑다운 뷰 가시성도 고려함. 에러 처리: MonsterSpawner.EnterBattle()에서 battleSceneName 빈값 체크, DeviceCameraBackground에서 에디터 가드(#if UNITY_EDITOR)가 적절히 사용됨. 코드 품질: BattleManager.cs(403줄)와 BattleSelectUI.cs(399줄)가 300줄 권장 초과. 필드 선언이 클래스 중간에 위치(BattleManager의 hp, maxHp 등). GetRewardItem()이 null 반환하는 데드 코드. 저장/로드 시스템 부재."
+        }
+      },
+      "found_systems": [
+        "BattleManager",
+        "Monster",
+        "MonsterSpawner",
+        "LevelManager",
+        "InventoryController",
+        "GpsMapPlayerMover",
+        "VictoryController",
+        "BattleSelectUI",
+        "DeviceCameraBackground",
+        "MonsterSelectableOutline"
+      ],
+      "missing_systems": [
+        "SaveManager",
+        "SoundManager",
+        "MapGrid"
+      ],
+      "scores": {
+        "code": 5,
+        "code_reason": "BattleManager.cs의 HP/XP 스케일링 로직(GetScaledMaxHp, GetScaledXpReward)과 MonsterSpawner의 확률 기반 스폰 시스템은 잘 구현됨. 그러나 BattleManager가 403줄로 전투 로직, 아이템 생성, UI 관리, 씬 전환을 모두 담당하여 단일 책임 원칙 위반. GetRewardItem()이 null만 반환하는 데드 코드, 필드 선언이 메서드 사이에 산재(hp, maxHp가 클래스 중간에 위치)하여 가독성 저하.",
+        "architecture": 5,
+        "architecture_reason": "Singleton 패턴(BattleManager.Instance, LevelManager.Instance, VictoryController.Instance)으로 주요 매니저 접근을 구현하였으나, Awake()에서 중복 체크 없이 Instance = this만 할당하여 씬 재로드 시 문제 가능. MonsterSpawner의 FieldPaused, FieldCameraRef 등 static 필드로 전역 상태 관리는 학생 프로젝트로서 실용적이나 결합도가 높음. BattleSelectionContext 정적 클래스로 씬 간 데이터 전달하는 구조는 적절함.",
+        "overall": 5
+      },
+      "code_review": [
+        {
+          "file": "BattleManager.cs",
+          "verdict": "needs_work",
+          "comment": "핵심 전투 관리 클래스로 HP 레벨 스케일링(GetScaledMaxHp), XP 보상 계산(GetScaledXpReward), 제한시간 타이머, 무기 드롭 확률(RollWeaponDrop) 등 실질적인 게임 로직이 구현되어 있음. 그러나 403줄로 권장 초과이며, GetRewardItem()이 null을 반환하는 스텁 상태. CreateRandomItem()에서 ScriptableObject.CreateInstance<Item>()으로 런타임 아이템 생성은 동작하지만 메모리 관리 주의 필요. GetBaseMaxHpByGrade → GetScaledMaxHp → GetMaxHpByGrade로 이어지는 3단계 래퍼 체인이 과도하며, hpScalePerPlayerLevel 인스턴스 필드와 GetMaxHpByGrade의 하드코딩된 0.12f가 불일치할 위험 있음. Singleton의 Awake()에서 중복 인스턴스 체크가 없음."
+        },
+        {
+          "file": "Monster.cs",
+          "verdict": "good",
+          "comment": "등급(Normal/Rare/Epic)과 타입(Slime/Beast/Golem) 조합으로 몬스터 다양성을 구현. Init()에서 초기화, ApplyVisualByGradeType()에서 Resources.Load로 스프라이트 적용, 배회 AI(wanderSpeed, wanderRetargetInterval)와 도주(fleeAfterSeconds) 행동이 구현됨. RequireComponent(typeof(Collider))로 컴포넌트 의존성 명시한 점이 좋음. 다만 ApplyGradeColor()가 ApplyVisualByGradeType()을 단순 호출만 하여 메서드명이 오해를 유발. TypeSpriteScales 구조체로 타입별 크기 조절이 Inspector에서 가능하도록 설계됨."
+        },
+        {
+          "file": "MonsterSpawner.cs",
+          "verdict": "good",
+          "comment": "UpdateProbabilityValues()에서 레벨 구간별(10 미만, 10 이상 등) 등급 출현 확률을 조정하고, DecideGradeByLevel()에서 Random.Range로 등급 결정하는 로직이 잘 구현됨. EnterBattle()에서 battleSceneName 빈값 체크 후 LoadSceneAsync로 배틀 진입. HideInGameSceneRootsExcept()로 씬 전환 시 필드 오브젝트를 숨기고 RestoreInGameSceneRoots()로 복원하는 패턴이 안정적. static FieldPaused와 FieldCameraRef로 전역 상태를 관리하는 것은 간결하지만 테스트 시 상태 오염 가능성 있음."
+        },
+        {
+          "file": "GpsMapPlayerMover.cs",
+          "verdict": "good",
+          "comment": "GPS 좌표를 월드 좌표로 변환하는 ConvertGpsToWorld()와 GetMeterOffset()이 지구 반경 상수(6378137.0)를 사용해 정확히 구현됨. _minMoveThresholdMeters(0.3m)로 GPS 노이즈 필터링, _positionLerpSpeed로 부드러운 이동, 에디터에서 WASD 목업 이동(UpdateEditorMock) 등 실용적 기능이 갖춰짐. 네임스페이스(ARRPG.LimChaeSung)를 사용하여 코드 정리도 양호. 341줄로 권장 초과이지만 GPS 처리 특성상 설정값이 많아 불가피한 면이 있음."
+        },
+        {
+          "file": "BattleSelectUI.cs",
+          "verdict": "needs_work",
+          "comment": "399줄로 권장 초과. 몬스터 리스트 생성, 슬라이드 애니메이션, 등급별 텍스트 색상, 한국어 폰트 폴백(GetKoreanFont에서 OS별 분기) 등 풍부한 UI 기능을 구현. 그러나 UI 로직, 애니메이션, 폰트 관리, 이벤트 처리가 한 클래스에 집중되어 있어 분리가 필요. _cachedKoreanFont를 static으로 캐싱한 점은 좋으나 플랫폼별 폰트 로직이 UI 클래스에 있는 것은 부적절."
+        },
+        {
+          "file": "DeviceCameraBackground.cs",
+          "verdict": "good",
+          "comment": "모바일 카메라를 AR 배경으로 사용하는 클래스. #if UNITY_EDITOR 가드로 에디터에서 카메라 시작을 방지하고, OnDisable/OnDestroy에서 StopCameraInternal()로 WebCamTexture를 정리하여 메모리 누수를 방지. Ensure() 정적 메서드로 싱글턴 생성 패턴 구현. 주석이 인코딩 깨져서 보이지만(UTF-8 문제로 추정) 로직 자체는 안정적."
+        },
+        {
+          "file": "MonsterSelectableOutline.cs",
+          "verdict": "good",
+          "comment": "몬스터 선택 가시성을 위한 외곽선과 바닥 링을 구현. 탑다운 뷰에서도 선택 가능 몬스터가 보이도록 groundRing을 그리는 아이디어가 좋음. FieldPaused 상태와 씬 이름으로 배틀 중 비활성화 처리. SetVisible()로 선택/미선택 상태 전환. outlineRenderQueue 설정으로 렌더링 순서 제어가 Inspector에서 가능."
+        }
+      ],
+      "code_issues": [
+        {
+          "file": "BattleManager.cs",
+          "description": "GetRewardItem()이 항상 null을 반환하는 스텁 메서드. 배틀 승리 시 보상 아이템 로직이 실제로 동작하지 않을 가능성 있음.",
+          "severity": "high"
+        },
+        {
+          "file": "BattleManager.cs",
+          "description": "Awake()에서 Instance = this만 할당하고 기존 인스턴스 중복 체크가 없음. 씬 재로드 시 여러 인스턴스가 생기거나, 이전 인스턴스의 참조가 남아 NullReferenceException 발생 가능.",
+          "severity": "medium"
+        },
+        {
+          "file": "BattleManager.cs",
+          "description": "hpScalePerPlayerLevel 필드(SerializeField, 기본값 0.12f)와 GetMaxHpByGrade() 내부의 하드코딩된 0.12f가 별도로 존재. Inspector에서 값을 변경해도 정적 메서드에는 반영되지 않아 의도와 다른 HP 스케일링이 적용될 수 있음.",
+          "severity": "high"
+        },
+        {
+          "file": "BattleManager.cs",
+          "description": "CreateRandomItem()에서 ScriptableObject.CreateInstance<Item>()으로 런타임에 에셋을 생성하지만 Destroy 호출이 보이지 않음. 반복적인 아이템 생성 시 메모리 누수 가능.",
+          "severity": "medium"
+        },
+        {
+          "file": "BattleManager.cs",
+          "description": "403줄로 CLAUDE.md 권장(300줄) 초과. 전투 로직, 아이템 생성, UI 관리, HP/XP 계산, 씬 전환이 한 클래스에 집중되어 있어 유지보수 어려움.",
+          "severity": "medium"
+        },
+        {
+          "file": "BattleSelectUI.cs",
+          "description": "399줄로 권장 초과. UI 표시, 애니메이션, 폰트 관리, 몬스터 선택 로직이 한 파일에 혼재. 특히 GetKoreanFont()의 플랫폼별 폰트 로딩은 유틸리티 클래스로 분리하는 것이 적절.",
+          "severity": "low"
+        },
+        {
+          "file": "MonsterSpawner.cs",
+          "description": "static FieldPaused, FieldCameraRef, ArCameraRef 등 전역 상태가 명시적 초기화 없이 사용됨. 배틀에서 복귀 시 RestoreInGameSceneRoots()가 호출되지 않으면 필드 오브젝트가 영구 숨김 상태로 남을 수 있음.",
+          "severity": "medium"
+        },
+        {
+          "file": "Monster.cs",
+          "description": "ApplyGradeColor()가 ApplyVisualByGradeType()을 단순 호출만 하여 메서드명이 기능을 정확히 반영하지 못함. 외부에서 색상만 변경하려는 호출자가 혼동할 수 있음.",
+          "severity": "low"
+        },
+        {
+          "file": "DeviceCameraBackground.cs",
+          "description": "주석 텍스트가 인코딩 깨짐(예: 'Canvas ���� �� ����'). 소스 파일 인코딩이 UTF-8이 아닌 것으로 추정. 빌드에는 영향 없으나 코드 리뷰/유지보수에 지장.",
+          "severity": "low"
+        },
+        {
+          "file": "GpsMapPlayerMover.cs",
+          "description": "_mainCam 필드가 선언되었지만 초기화 코드가 생략된 부분에 있어 확인 불가. Camera.main 캐싱이 제대로 되지 않으면 매 프레임 FindGameObjectWithTag 호출로 성능 저하 가능.",
+          "severity": "low"
+        }
+      ],
+      "risks": [
+        {
+          "level": "critical",
+          "title": "SaveManager 부재로 게임 진행 상태 유실",
+          "why": "현재 레벨, 경험치, 인벤토리 아이템 등 플레이 데이터를 저장하는 시스템이 전혀 없음. 앱 종료 시 모든 진행이 초기화되어 시연 중 앱이 꺼지면 처음부터 다시 시작해야 함. 발표 시연에서 치명적.",
+          "steps": [
+            "PlayerPrefs 기반 간단한 SaveManager 구현 (레벨, XP, 인벤토리 JSON 직렬화)",
+            "LevelManager와 InventoryController에 Save/Load 호출 추가",
+            "앱 시작 시 자동 로드, 레벨업/아이템 획득 시 자동 저장"
+          ]
+        },
+        {
+          "level": "critical",
+          "title": "LimChaesung 브랜치 미병합 (VFX/이펙트 작업 10커밋)",
+          "why": "origin/LimChaesung 브랜치가 main 대비 10커밋 ahead, 7커밋 behind로 상당한 분기 상태. ShaderGraph, VFX 작업이 포함되어 있으나 main에 미병합. 마지막 활동이 10일 전이고 충돌 해결이 필요할 수 있어 마감 직전 병합 시 큰 혼란 발생 가능.",
+          "steps": [
+            "즉시 LimChaesung 브랜치를 main에 rebase 또는 merge 시도",
+            "충돌 발생 시 해당 팀원(Lachesis)과 함께 해결",
+            "병합 후 BattleScene에서 VFX가 정상 동작하는지 확인"
+          ]
+        },
+        {
+          "level": "high",
+          "title": "오디오 에셋 0개, SoundManager 부재",
+          "why": "게임에 소리가 전혀 없으면 시연 시 매우 밋밋한 인상을 줌. AR RPG에서 전투 효과음, 배경음악은 기본적인 기대 요소. 에셋 준비와 구현 모두 필요하여 시간이 많이 소요됨.",
+          "steps": [
+            "무료 효과음 에셋(전투 타격, 몬스터 등장, 승리 팡파레) 3-5개 확보",
+            "간단한 AudioManager 싱글턴 구현 (AudioSource + PlayOneShot)",
+            "BattleManager의 데미지 처리와 승리/패배 시점에 효과음 재생 추가"
+          ]
+        },
+        {
+          "level": "high",
+          "title": "GetRewardItem() 스텁으로 보상 시스템 미완성",
+          "why": "BattleManager.GetRewardItem()이 null을 반환하여 전투 승리 후 아이템 보상이 실제로 지급되지 않을 수 있음. CreateRandomItem()은 구현되어 있으나 GetRewardItem()과 연결되지 않아 보상 루프가 끊김.",
+          "steps": [
+            "GetRewardItem()에서 RollWeaponDrop() 결과에 따라 CreateRandomItem() 호출하도록 연결",
+            "InventoryController에 아이템 추가 로직 확인 및 연동",
+            "배틀 승리 → 아이템 드롭 → 인벤토리 추가 플로우 전체 테스트"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "모든 팀원 9-12일간 비활동 상태",
+          "why": "마지막 커밋이 3월 20일이고 현재 3월 30일. 마감이 임박한 상황에서 10일간 커밋이 없다는 것은 작업이 멈췄거나 로컬에서만 작업 중일 수 있음. 미푸시 작업이 있다면 충돌 위험, 없다면 진행 정체.",
+          "steps": [
+            "팀원 각자 로컬 변경사항 즉시 커밋 및 푸시",
+            "남은 작업 우선순위 정리 (SaveManager > 오디오 > VFX 병합)",
+            "매일 1회 이상 커밋하는 규칙 설정"
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "title": "PlayerPrefs 기반 최소 저장 시스템 긴급 구현",
+          "why": "저장 없이는 시연이 불안정하고, 레벨/인벤토리 초기화 시 게임 흐름을 보여줄 수 없음. PlayerPrefs는 가장 빠르게 구현할 수 있는 저장 방식.",
+          "steps": [
+            "SaveManager.cs 생성: PlayerPrefs.SetInt로 레벨/XP 저장, JsonUtility로 인벤토리 직렬화",
+            "LevelManager에 SaveLevel()/LoadLevel() 추가, 레벨업 시 자동 저장",
+            "InventoryController에 SaveInventory()/LoadInventory() 추가",
+            "게임 시작 시(Awake) 자동 로드, OnApplicationPause(true)에서 자동 저장"
+          ]
+        },
+        {
+          "title": "보상 루프 완성 (GetRewardItem → 인벤토리 연동)",
+          "why": "전투→보상→성장 루프는 RPG의 핵심. 현재 전투는 되지만 보상이 null로 반환되어 성장 동기가 없음.",
+          "steps": [
+            "BattleManager.GetRewardItem()에서 RollWeaponDrop() + CreateRandomItem() 호출 연결",
+            "VictoryData()에서 GetRewardItem() 결과를 InventoryController에 추가",
+            "승리 UI에 획득 아이템 표시 (아이콘 + 등급 색상)"
+          ]
+        },
+        {
+          "title": "최소 효과음 3개 추가로 시연 품질 향상",
+          "why": "무음 게임은 시연 시 완성도가 크게 떨어져 보임. 무료 에셋 3개만으로도 체감 품질이 크게 향상됨.",
+          "steps": [
+            "freesound.org 등에서 전투 타격, 몬스터 등장, 승리 효과음 다운로드",
+            "AudioManager 싱글턴 생성 (public AudioClip[] + PlayOneShot)",
+            "BattleManager 데미지 시, 몬스터 스폰 시, 승리 시 재생 호출 추가"
+          ]
+        }
+      ],
+      "commit_analysis": "총 39커밋 중 기여 분포는 kimin(17), KSJ(8), Lachesis(6)으로 kimin이 주도적. 커밋 메시지 서술률 74%로 양호하나 'feat : Inventory'(4164줄), 'KSJ project test into MAIN'(3266줄, 42파일) 등 대형 커밋이 다수 존재하여 코드 리뷰와 롤백이 어려움. 주간 추세 [0, 21, 18, 0]에서 마지막 주 커밋이 0으로 급감한 것이 우려됨. 최근 커밋은 최적화(캐싱, UI 위치 조정)와 VFX 작업에 집중되어 있어 핵심 기능은 대부분 완료된 것으로 보이나, 미병합 브랜치와 비활동 기간이 마감 리스크를 높임.",
+      "architecture_notes": "Singleton 패턴을 BattleManager, LevelManager, VictoryController에 사용하여 전역 접근을 구현했으나, Awake()에서 중복 체크나 DontDestroyOnLoad 없이 Instance = this만 할당하는 불완전한 구현. MonsterSpawner는 static 필드(FieldPaused, FieldCameraRef)로 필드/배틀 상태를 관리하며, BattleSelectionContext 정적 클래스로 씬 간 데이터 전달. 씬 구조는 InGame(필드) ↔ BattleScene(전투)로 분리되어 있고 LoadSceneAsync + Additive 방식 사용. 데이터 모델은 ScriptableObject(Item)와 enum(MonsterGrade, MonsterType)으로 구성. 전체적으로 학생 프로젝트로서 실용적인 구조이나, BattleManager가 전투·아이템·UI·씬전환을 모두 담당하는 God Object 경향이 있고, 네임스페이스 사용이 일부 모듈에만 적용되어 일관성이 부족함.",
+      "project_narrative": "이 팀은 AR 위치기반 몬스터 RPG를 개발하고 있으며, GPS 기반 필드 이동(GpsMapPlayerMover), 몬스터 스폰 및 등급 시스템(MonsterSpawner, Monster), 턴제 전투(BattleManager), 레벨링(LevelManager), 인벤토리(InventoryController), 승리 처리(VictoryController)까지 핵심 게임 루프의 대부분을 구현한 상태다. 특히 GPS→월드 좌표 변환, 레벨 기반 몬스터 등급 확률 조정, HP/XP 레벨 스케일링 등 게임 밸런싱 로직이 실질적으로 동작하며, BattleSelectUI의 슬라이드 패널과 MonsterSelectableOutline의 바닥 링 등 UX도 고려되어 있다. 그러나 SaveManager가 없어 게임 진행이 저장되지 않고, SoundManager와 오디오 에셋이 전무하며, GetRewardItem()이 null을 반환하여 전투→보상→성장 루프가 끊겨 있다. 가장 시급한 것은 SaveManager 구현, LimChaesung 브랜치의 VFX 작업 병합, 그리고 보상 시스템 연결로, 이 세 가지가 해결되면 동작하는 프로토타입으로서 시연이 가능한 수준이다."
+    },
+    "file_counts": {
+      "cs": 32,
+      "unity": 8,
+      "prefab": 5,
+      "mat": 4,
+      "anim": 2,
+      "asset": 1,
+      "png_jpg": 15,
+      "asmdef": 9,
+      "audio": 0,
+      "fbx": 0,
+      "shader": 0
+    },
+    "commit_quality": {
+      "avg_lines": 1032,
+      "median_lines": 320,
+      "oversized": [
+        {
+          "hash": "27aa882",
+          "message": "[Quote] making vfx",
+          "lines_changed": 4883,
+          "files_changed": 1
+        },
+        {
+          "hash": "21016f3",
+          "message": "feat : Inventory",
+          "lines_changed": 4164,
+          "files_changed": 1
+        },
+        {
+          "hash": "c87f790",
+          "message": "KSJ project test into MAIN",
+          "lines_changed": 3266,
+          "files_changed": 42
+        },
+        {
+          "hash": "c58f613",
+          "message": "feat : inventory",
+          "lines_changed": 2747,
+          "files_changed": 9
+        },
+        {
+          "hash": "9d02795",
+          "message": "feat : 쓰래기통 버튼",
+          "lines_changed": 2044,
+          "files_changed": 3
+        }
+      ],
+      "msg_descriptive_pct": 74,
+      "msg_short_count": 0,
+      "total": 31
+    },
+    "hot_files": [
+      {
+        "file": "InGame.unity",
+        "path": "Assets/Scenes/InGame.unity",
+        "change_count": 16
+      },
+      {
+        "file": "BattleScene.unity",
+        "path": "Assets/Scenes/BattleScene.unity",
+        "change_count": 12
+      },
+      {
+        "file": "BattleManager.cs",
+        "path": "Assets/Scripts/Script/BattleManager.cs",
+        "change_count": 12
+      },
+      {
+        "file": "configure_fingerprint.bin",
+        "path": ".utmp/RelWithDebInfo/5s2p6t63/arm64-v8a/configure_fingerprint.bin",
+        "change_count": 9
+      },
+      {
+        "file": "MonsterSpawner.cs",
+        "path": "Assets/Scripts/Script/MonsterSpawner.cs",
+        "change_count": 6
+      },
+      {
+        "file": "ARRPG.InGame.asmdef",
+        "path": "Assets/Scripts/Script/ARRPG.InGame.asmdef",
+        "change_count": 6
+      },
+      {
+        "file": "BattleSelectUI.cs",
+        "path": "Assets/Scripts/Script/BattleSelectUI.cs",
+        "change_count": 5
+      },
+      {
+        "file": "Monster.cs",
+        "path": "Assets/Scripts/Script/Monster.cs",
+        "change_count": 5
+      },
+      {
+        "file": "InventoryController.cs",
+        "path": "Assets/Scripts/Inventory/InventoryController.cs",
+        "change_count": 5
+      },
+      {
+        "file": "GpsMapPlayerMover.cs",
+        "path": "Assets/Scripts/LimChaeSung/GpsMapPlayerMover.cs",
+        "change_count": 4
+      }
+    ],
+    "file_path_map": {
+      "Item.cs": "Assets/ScriptableObject/Item.cs",
+      "MapTileManager.cs": "Assets/Scripts/Core/Location/MapTileManager.cs",
+      "GuestAuthManager.cs": "Assets/Scripts/Data/GuestAuthManager.cs",
+      "GuestUserData.cs": "Assets/Scripts/Data/GuestUserData.cs",
+      "MapDataManager.cs": "Assets/Scripts/Data/MapDataManager.cs",
+      "InventoryController.cs": "Assets/Scripts/Inventory/InventoryController.cs",
+      "InventorySlotUI.cs": "Assets/Scripts/Inventory/InventorySlotUI.cs",
+      "ExpUIController.cs": "Assets/Scripts/Level/ExpUIController.cs",
+      "LevelManager.cs": "Assets/Scripts/Level/LevelManager.cs",
+      "GpsMapPlayerMover.cs": "Assets/Scripts/LimChaeSung/GpsMapPlayerMover.cs",
+      "SimpleFollowCamera.cs": "Assets/Scripts/LimChaeSung/SimpleFollowCamera.cs",
+      "MapGridGenerator.cs": "Assets/Scripts/Map/MapGridGenerator.cs",
+      "MapLoader.cs": "Assets/Scripts/Map/MapLoader.cs",
+      "MapTileRenderer.cs": "Assets/Scripts/Map/MapTileRenderer.cs",
+      "BattleCombatTarget.cs": "Assets/Scripts/Script/BattleCombatTarget.cs",
+      "BattleManager.cs": "Assets/Scripts/Script/BattleManager.cs",
+      "BattleSelectionContext.cs": "Assets/Scripts/Script/BattleSelectionContext.cs",
+      "BattleSelectUI.cs": "Assets/Scripts/Script/BattleSelectUI.cs",
+      "BattleUI.cs": "Assets/Scripts/Script/BattleUI.cs",
+      "DefeatController.cs": "Assets/Scripts/Script/DefeatController.cs",
+      "DeviceCameraBackground.cs": "Assets/Scripts/Script/DeviceCameraBackground.cs",
+      "DrawRangeCircles.cs": "Assets/Scripts/Script/DrawRangeCircles.cs",
+      "Monster.cs": "Assets/Scripts/Script/Monster.cs",
+      "MonsterFieldIconOrbit.cs": "Assets/Scripts/Script/MonsterFieldIconOrbit.cs",
+      "MonsterSelectableOutline.cs": "Assets/Scripts/Script/MonsterSelectableOutline.cs",
+      "MonsterSpawner.cs": "Assets/Scripts/Script/MonsterSpawner.cs",
+      "PlayerMoveTest.cs": "Assets/Scripts/Script/PlayerMoveTest.cs",
+      "SpawnProbUI.cs": "Assets/Scripts/Script/SpawnProbUI.cs",
+      "TopDownFollow.cs": "Assets/Scripts/Script/TopDownFollow.cs",
+      "TopDownZoom.cs": "Assets/Scripts/Script/TopDownZoom.cs",
+      "VictoryController.cs": "Assets/Scripts/Victory/VictoryController.cs",
+      "Readme.cs": "Assets/TutorialInfo/Scripts/Readme.cs"
+    }
+  },
+  "Dumb-ways-to-die": {
+    "project": {
+      "name": "Dumb-ways-to-die",
+      "dir": "Dumb-ways-to-die",
+      "repo": "Dumb-ways-to-die",
+      "description": "VR 블랙코미디 데스게임",
+      "platform": "Oculus/OpenXR",
+      "primary_branch": "main",
+      "expected_systems": [
+        "GameManager",
+        "GameBootstrap",
+        "VRRigBuilder",
+        "StageCommonSystem",
+        "DeathTrigger",
+        "LobbyManager",
+        "SFXPlayer",
+        "VFXPlayer",
+        "StageController",
+        "ScoreManager"
+      ]
+    },
+    "git": {
+      "total_commits": 334,
+      "contributors": [
+        {
+          "name": "tfarcenim123-afk",
+          "commits": 161,
+          "last_date": "2026-03-30",
+          "days_inactive": 0
+        },
+        {
+          "name": "Juhyun Son",
+          "commits": 59,
+          "last_date": "2026-03-30",
+          "days_inactive": 0
+        },
+        {
+          "name": "SonJuhyun",
+          "commits": 15,
+          "last_date": "2026-03-30",
+          "days_inactive": 0
+        }
+      ],
+      "branches": [
+        {
+          "name": "origin/stage/shark",
+          "ahead": 35,
+          "behind": 19,
+          "last_activity": "2026-03-30"
+        },
+        {
+          "name": "origin/stage/manhole",
+          "ahead": 1,
+          "behind": 3,
+          "last_activity": "2026-03-30"
+        },
+        {
+          "name": "(HEAD detached at origin/main)",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "N/A"
+        },
+        {
+          "name": "main",
+          "ahead": 0,
+          "behind": 45,
+          "last_activity": "2026-03-26"
+        },
+        {
+          "name": "origin",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "2026-03-30"
+        }
+      ],
+      "last_commit_date": "2026-03-30",
+      "last_commit_msg": "feat: stage/manhole 스테이지 기초 구현",
+      "recent_commits": [
+        {
+          "hash": "c8679a5",
+          "author": "Juhyun Son",
+          "date": "2026-03-30",
+          "message": "feat: stage/manhole 스테이지 기초 구현"
+        },
+        {
+          "hash": "4edae0c",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat:로드킬씬 디테일 추가"
+        },
+        {
+          "hash": "30c838d",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat: 신호등 위치 전환 시 SFX 효과음 재생"
+        },
+        {
+          "hash": "087a83b",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat-플레이어 맵 이탈 방지"
+        },
+        {
+          "hash": "0d30dd9",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "fix: 텔레포트 시 CharacterController 비활성화/재활성화"
+        },
+        {
+          "hash": "39f5f88",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "fix: 반복 텔���포트 시 origin.y 누적 드리프트로 바닥 관통하는 버그 수정"
+        },
+        {
+          "hash": "4ca4c3b",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "fix: StageCommonSystem 참조 제거 (Core→Gameplay 참조 불가)"
+        },
+        {
+          "hash": "4e5b46d",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "fix: 무한 리스폰으로 바닥 관통하는 버그 수정"
+        },
+        {
+          "hash": "7629106",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat: 리스폰 시작 위치 Y 오프셋 추가"
+        },
+        {
+          "hash": "ab83f2a",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "chore: PlayerRespawnBound.cs.meta 추가"
+        },
+        {
+          "hash": "4ec5bb7",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat: Room_ 벽 오브젝트 기반 자동 영역 계산으로 변경"
+        },
+        {
+          "hash": "4720cc5",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat: 거리 기반 → 바운딩 박스 영역 기반으로 리스폰 조건 변경"
+        },
+        {
+          "hash": "8e5dde9",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat: 스테이지 시작 위치 기반 자동 리스폰 시스템 추가"
+        },
+        {
+          "hash": "dbb8e4d",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat/스테이지에 어울리는 유혹멘트 추가"
+        },
+        {
+          "hash": "8043a33",
+          "author": "tfarcenim123-afk",
+          "date": "2026-03-30",
+          "message": "feat:투명유리추가"
+        }
+      ],
+      "commits_per_week": 86,
+      "primary_branch": "main",
+      "days_since_last_commit": 0,
+      "weekly_trend": [
+        0,
+        60,
+        188,
+        86
+      ],
+      "unmerged_branches": 2
+    },
+    "claude": {
+      "progress_pct": 83,
+      "phases": {
+        "foundation": {
+          "score": 5,
+          "reason": "GameBootstrap가 RuntimeInitializeOnLoadMethod로 자동 초기화 파이프라인을 구성하고, VRRigBuilder가 sticky OnRigReady 이벤트로 XR 리그를 안전하게 구축합니다. 7개의 asmdef로 모듈 경계가 명확하며, VContainer DI, SaveManager(JSON 기반 영속성), BGMManager까지 기반 시스템이 빠짐없이 갖춰져 있습니다."
+        },
+        "core_systems": {
+          "score": 26,
+          "reason": "GameManager(씬 로딩/스테이지 추적), VRRigBuilder(XR 리그 싱글톤), StageCommonSystem(사망 오케스트레이션+유혹 팝업), 7종의 DeathTrigger(Collision, GrabContact, Socket, Eat, BearTrap, Microwave, GasTank), LobbyManager(스테이지 선택 UI), StageSFXPlayer/StageVFXPlayer/StageHapticPlayer(3종 트리거 모드), DeathCameraEffect(카메라 연출+슬로모션+넉백), ResultScreenSystem(사망 결과 패널), PhysicsKnockback(폭발 물리), PlayerRespawnBound(자동 리스폰) 등 대부분 실제 동작 로직이 구현되어 있습니다. ScoreManager는 별도 클래스가 없지만 GameManager.RecordDeath/RecordClear가 기능을 대체합니다. 다만 Shark 스테이지와 Manhole 스테이지는 기초 구현 단계(최근 커밋 기준)로 완성도가 낮습니다."
+        },
+        "integration": {
+          "score": 24,
+          "reason": "Title→Lobby→Stage→Result→Lobby 게임 루프가 GameManager.LoadTitle/LoadLobby/LoadStage/ReloadCurrentStage로 완성되어 있습니다. StageScope(VContainer LifetimeScope)가 StageCommonSystem을 모든 DeathTrigger에 [Inject]로 주입하고, OnPlayerDeath 이벤트로 DeathCameraEffect·BaseDeathEffect·ResultScreenSystem이 체이닝됩니다. 트리거별 정적 이벤트(OnExplosionStarted 등)로 PhysicsKnockback과 스테이지별 DeathEffect가 연결되며, BGMManager가 씬 전환 시 페이드인/아웃을 처리합니다. XROriginSceneReset이 씬 로드마다 XR Origin 위치를 초기화하여 스테이지 간 상태 오염을 방지합니다. asmdef 참조 그래프가 Core→Gameplay→DeathEffects→DeathTriggers→Scope 순서로 순환 의존 없이 구성되어 있어 컴파일 타임 안전성이 확보됩니다."
+        },
+        "content": {
+          "score": 11,
+          "reason": "오디오 11개, 프리팹 30개, 머티리얼 55개, FBX 14개, 텍스처 34개, 셰이더 4개, 씬 14개로 에셋 기반이 충실합니다. StageSFXPlayer/StageVFXPlayer가 코드에서 실제로 AudioClip·ParticleSystem을 참조하며, GasTankFlameEffect·GasTankSmokeParticles·GasTankExplosionOverlay 등이 VFX를 코드로 동적 생성합니다. StageHapticPlayer가 컨트롤러 햅틱까지 지원합니다. 다만 애니메이션 파일이 1개뿐이고, Shark/Manhole 스테이지의 에셋 완성도는 아직 낮습니다."
+        },
+        "polish": {
+          "score": 14,
+          "reason": "UI는 LobbyManager(잠금/해제/완료 상태 표시), TitleManager, ResultScreenSystem(ZTest=Always로 벽 관통 렌더링), LazyFollowUI(시야 이탈 시 자동 재배치)로 VR에 맞게 구현되어 있습니다. SaveManager로 저장/로드가 동작하며, PlayerRespawnBound로 맵 이탈 방지 안전장치가 있습니다. 코드 품질 면에서 네임스페이스(DumbWays.Gameplay, DumbWays.Core 등)와 [Header]/[Tooltip] 어트리뷰트 사용이 일관적입니다. 다만 PlayerRespawnBound·TrafficLightController·ResultScreenSystem·LazyFollowUI·StageHapticPlayer 등 일부 파일이 네임스페이스 없이 전역에 선언되어 있고, StageHapticPlayer(333줄)가 권장 300줄을 초과합니다."
+        }
+      },
+      "found_systems": [
+        "GameManager",
+        "GameBootstrap",
+        "VRRigBuilder",
+        "StageCommonSystem",
+        "DeathTrigger (CollisionDeathTrigger, GrabContactDeathTrigger, SocketDeathTrigger, EatDeathTrigger, BearTrapDeathTrigger, MicrowaveDeathTrigger, GasTankDeathTrigger)",
+        "LobbyManager",
+        "StageSFXPlayer",
+        "StageVFXPlayer",
+        "StageHapticPlayer",
+        "DeathCameraEffect",
+        "ResultScreenSystem",
+        "PhysicsKnockback",
+        "PlayerRespawnBound",
+        "BGMManager",
+        "SaveManager",
+        "BaseDeathEffect (+ 8개 서브클래스)"
+      ],
+      "missing_systems": [
+        "ScoreManager (GameManager.RecordDeath/RecordClear로 대체되어 별도 클래스 없음)",
+        "StageController (StageCommonSystem이 역할 대체)"
+      ],
+      "scores": {
+        "code": 8,
+        "code_reason": "VContainer DI, asmdef 모듈화, [Header]/[Tooltip] 어트리뷰트, 일관된 코루틴 패턴 등 학생 프로젝트로서는 매우 높은 코드 품질입니다. VRRigBuilder의 sticky 이벤트 패턴이나 HeadTrackingController의 리플렉션 기반 HandVisualizer 제어 등 고급 기법도 적절히 사용되었습니다. 다만 PlayerRespawnBound.ComputeBoundsFromRoomWalls()에서 FindObjectsByType<Transform>로 씬 전체 Transform을 순회하는 것은 성능 우려가 있고, 일부 파일(StageHapticPlayer 333줄)이 권장 길이를 초과합니다.",
+        "architecture": 9,
+        "architecture_reason": "VContainer를 활용한 DI, 7개 asmdef으로 구성된 명확한 모듈 경계(Core→Gameplay→DeathEffects→DeathTriggers→Scope), 이벤트 기반 느슨한 결합(OnPlayerDeath, OnStageResultRecorded, 트리거별 정적 이벤트), Singleton+Observer+State Machine+Factory 패턴의 적절한 조합은 학생 프로젝트 수준을 크게 넘어섭니다. GameBootstrap의 자동 초기화 파이프라인과 DontDestroyOnLoad 영속 객체 관리가 특히 잘 설계되었습니다. 순환 의존이 없는 깨끗한 의존성 그래프는 실무에서도 모범적인 수준입니다.",
+        "overall": 8
+      },
+      "code_review": [
+        {
+          "file": "GameBootstrap.cs",
+          "verdict": "good",
+          "comment": "RuntimeInitializeOnLoadMethod로 어떤 씬에서 Play해도 VRRigBuilder→GameManager→VRCanvasAdapter 순서로 자동 생성되는 부트스트랩 파이프라인이 훌륭합니다. 씬별 수동 배치 없이 DontDestroyOnLoad 객체를 안전하게 초기화하며, 이미 존재하는 경우 중복 생성을 방지합니다. 학생 프로젝트에서 이 수준의 자동화를 구현한 것은 인상적입니다."
+        },
+        {
+          "file": "VRRigBuilder.cs",
+          "verdict": "good",
+          "comment": "Sticky OnRigReady 이벤트 패턴이 핵심입니다. 이미 Ready 상태면 구독 즉시 콜백을 호출하여 초기화 순서 문제를 원천 차단합니다. XRInteractionManager, EventSystem+XRUIInputModule을 자식으로 생성하고 DontDestroyOnLoad로 영속시키는 구조가 깔끔합니다. XRCamera와 XROriginTransform을 프로퍼티로 노출하여 다른 시스템이 안전하게 접근할 수 있게 했습니다."
+        },
+        {
+          "file": "StageCommonSystem.cs",
+          "verdict": "good",
+          "comment": "'죽음이 곧 클리어'라는 게임 핵심 메카닉을 TriggerDeath()에서 RecordClear+RecordDeath 연쇄 호출로 명확하게 구현했습니다. 유혹 팝업 시스템(temptationMessages 배열 + 랜덤 선택 + LazyFollowUI)이 게임 컨셉과 잘 맞습니다. IsDead 플래그로 중복 사망을 방지하고, SuppressTemptation()으로 외부에서 팝업을 억제할 수 있는 인터페이스도 제공합니다."
+        },
+        {
+          "file": "DeathCameraEffect.cs",
+          "verdict": "good",
+          "comment": "사망 후 카메라 연출(슬로모션→시체 포즈→카메라 상승→하향 회전→결과 패널)이 NormalDeathSequence와 KnockbackDeathSequence로 분기되어 폭발/일반 사망을 모두 처리합니다. PhysicsKnockback.IsActive를 폴링하여 넉백 완료 후 카메라 연출을 시작하는 설계가 좋습니다. OnCameraRiseComplete 정적 이벤트로 VFX 스폰 타이밍을 동기화합니다."
+        },
+        {
+          "file": "PlayerRespawnBound.cs",
+          "verdict": "needs_work",
+          "comment": "VRRigBuilder.OnRigReady로 자동 등록되어 씬 배치가 불필요한 점은 좋으나, ComputeBoundsFromRoomWalls()에서 FindObjectsByType<Transform>(FindObjectsSortMode.None)로 씬의 모든 Transform을 순회합니다. 씬에 수천 개의 오브젝트가 있으면 성능 저하가 발생할 수 있습니다. GameObject.FindGameObjectsWithTag() 또는 특정 컴포넌트 기반 검색으로 변경하는 것이 좋습니다. 또한 네임스페이스가 없어 전역 스코프에 선언되어 있습니다."
+        },
+        {
+          "file": "EatDeathTrigger.cs",
+          "verdict": "good",
+          "comment": "Idle→Eating→Done 상태 머신이 명확하고, OnEatingStarted/OnEatingCancelled 이벤트로 MushroomDeathEffect와 느슨하게 연결됩니다. EatAnimator, EatAudioPlayer, EatDebrisSpawner를 RequireComponent로 강제하여 컴포넌트 누락을 방지합니다. InputActionReference 없이도 A/B+Y 버튼을 자동 감지하는 폴백이 있어 Inspector 설정 실수에 대한 안전장치가 있습니다."
+        },
+        {
+          "file": "MicrowaveDeathEffect.cs",
+          "verdict": "good",
+          "comment": "3단계 포스트프로세싱 연출(충전→섬광→연기)이 각각 별도의 Volume으로 관리되어 독립적으로 weight를 제어합니다. OnDisable에서 모든 Volume weight를 0으로 초기화하여 씬 리로드 시 잔여 효과를 방지합니다. MicrowaveDeathTrigger의 정적 이벤트(OnChargingStarted, OnExplosionStarted)를 구독하여 트리거 타이밍과 정확히 동기화됩니다."
+        },
+        {
+          "file": "StageHapticPlayer.cs",
+          "verdict": "needs_work",
+          "comment": "Single Pulse, Pattern, Ramp 3가지 햅틱 모드를 지원하는 범용 시스템이지만, 333줄로 권장 300줄을 초과합니다. HapticEntry 클래스에 모드별 필드가 모두 포함되어 있어 Inspector에서 사용하지 않는 필드가 노출됩니다. 네임스페이스가 없고, leftHapticPlayer/rightHapticPlayer를 자동 검색하는 로직에서 씬 구조에 강하게 의존합니다."
+        }
+      ],
+      "code_issues": [
+        {
+          "file": "PlayerRespawnBound.cs",
+          "description": "ComputeBoundsFromRoomWalls()에서 FindObjectsByType<Transform>(FindObjectsSortMode.None)를 호출하여 씬의 모든 Transform을 순회합니다. 대규모 씬에서 성능 저하가 발생할 수 있으며, Room_ 프리픽스를 가진 오브젝트에 전용 컴포넌트나 태그를 부여하여 검색 범위를 줄여야 합니다.",
+          "severity": "medium"
+        },
+        {
+          "file": "PlayerRespawnBound.cs",
+          "description": "AutoRegister()에서 AddComponent<PlayerRespawnBound>()를 호출하지만, 이미 컴포넌트가 존재하는지 확인하지 않습니다. OnRigReady가 여러 번 호출될 경우 중복 컴포넌트가 추가될 수 있습니다.",
+          "severity": "medium"
+        },
+        {
+          "file": "StageHapticPlayer.cs",
+          "description": "네임스페이스 없이 전역 스코프에 선언되어 있습니다. DumbWays.Gameplay 네임스페이스 아래에 배치해야 프로젝트의 asmdef 모듈화 원칙과 일치합니다.",
+          "severity": "low"
+        },
+        {
+          "file": "ResultScreenSystem.cs",
+          "description": "네임스페이스가 없고, deathPanel이 null일 때의 방어 로직은 있지만 deathMessageText를 FindTMP()로 런타임에 검색하므로 자식 오브젝트 이름이 변경되면 NullReferenceException이 발생합니다.",
+          "severity": "medium"
+        },
+        {
+          "file": "TrafficLightController.cs",
+          "description": "네임스페이스가 없고, _cam을 Camera.main으로 가져오는데 Camera.main은 내부적으로 FindGameObjectWithTag를 호출하여 매 프레임 호출 시 성능 저하가 발생할 수 있습니다(OnEnable에서 캐싱하고 있다면 문제 없음).",
+          "severity": "low"
+        },
+        {
+          "file": "CarMover.cs",
+          "description": "플레이어의 머리를 강제로 차 방향으로 회전시키는 로직이 VR 멀미(모션 시크니스)를 유발할 수 있습니다. 사용자의 머리 제어를 빼앗는 것은 VR UX 가이드라인에서 권장하지 않는 패턴입니다.",
+          "severity": "high"
+        },
+        {
+          "file": "LazyFollowUI.cs",
+          "description": "네임스페이스가 없이 전역 스코프에 선언되어 있으며, 188줄로 크기는 적절하지만 DumbWays.UI 네임스페이스에 속해야 합니다.",
+          "severity": "low"
+        },
+        {
+          "file": "GasTankFlameEffect.cs",
+          "description": "flamePrefab이 null일 때 Instantiate 호출 시 NullReferenceException이 발생합니다. [SerializeField]로 선언되어 Inspector에서 할당해야 하지만, 런타임 null 체크가 없습니다.",
+          "severity": "medium"
+        },
+        {
+          "file": "StageScope.cs",
+          "description": "FindObjectsByType로 모든 DeathTrigger 타입을 개별 등록하므로, 새 트리거 타입 추가 시 StageScope에도 등록 코드를 추가해야 합니다. 인터페이스 기반 자동 등록이면 확장성이 좋아집니다.",
+          "severity": "low"
+        },
+        {
+          "file": "DeathOverlayRenderer.cs",
+          "description": "SpawnSequence()에서 _activeImages 리스트에 이미지를 추가하지만 CleanupAll()이 호출되지 않으면 메모리 누수가 발생할 수 있습니다. 씬 전환 시 OnDisable/OnDestroy에서 정리가 필요합니다.",
+          "severity": "medium"
+        }
+      ],
+      "risks": [
+        {
+          "level": "high",
+          "title": "Shark/Manhole 스테이지 미완성 상태에서 마감 임박",
+          "why": "stage/shark 브랜치가 main 대비 35 커밋 ahead/19 behind이고, manhole은 오늘자 기초 구현 커밋(c8679a5)만 있습니다. 두 스테이지 모두 main에 머지되지 않았으며, 머지 충돌 가능성이 높습니다. 발표/제출 시 데모할 수 있는 완성된 스테이지 수가 부족할 수 있습니다.",
+          "steps": [
+            "stage/shark 브랜치를 먼저 main에 머지하고 충돌 해결",
+            "Manhole 스테이지는 기존 DeathTrigger(CollisionDeathTrigger) 재활용으로 최소 기능 구현",
+            "데모용 빌드에서 미완성 스테이지는 LobbyManager에서 '준비 중' 표시로 숨기기"
+          ]
+        },
+        {
+          "level": "high",
+          "title": "CarMover의 강제 머리 회전이 VR 멀미 유발 가능",
+          "why": "VR에서 사용자의 의지와 무관하게 시점을 강제 회전시키는 것은 가장 심각한 UX 안티패턴 중 하나입니다. Oculus 가이드라인에서도 명시적으로 금지하며, 심사/발표 시 체험자가 어지러움을 호소할 수 있습니다.",
+          "steps": [
+            "강제 회전 대신 방향 표시 UI(화살표, 비네팅 효과)로 시선 유도",
+            "또는 DeathCameraEffect처럼 사망 후에만 짧게 카메라 제어하는 방식으로 변경",
+            "최소한 회전 속도를 대폭 낮추고 VR 테스터에게 확인"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "main 브랜치가 origin/main 대비 45 커밋 뒤처짐",
+          "why": "로컬 main이 원격 main보다 45커밋 뒤에 있어 최신 코드로 빌드하지 않으면 발표 시 구버전이 실행될 수 있습니다. 또한 2개의 미머지 브랜치와 결합하면 통합 시 대규모 충돌이 발생할 수 있습니다.",
+          "steps": [
+            "즉시 git pull로 main을 최신화",
+            "feature 브랜치들을 순차적으로 main에 머지 (shark 먼저, 그 다음 manhole)",
+            "머지 후 반드시 VR 기기에서 전체 플로우 테스트"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "네임스페이스 미적용 파일들로 인한 이름 충돌 가능성",
+          "why": "PlayerRespawnBound, TrafficLightController, ResultScreenSystem, LazyFollowUI, StageHapticPlayer 등 5개 이상의 파일이 전역 네임스페이스에 있어 외부 에셋 패키지와 이름이 충돌할 수 있습니다.",
+          "steps": [
+            "해당 파일들에 DumbWays.Core 또는 DumbWays.Gameplay/DumbWays.UI 네임스페이스 추가",
+            "asmdef의 rootNamespace 설정 활용"
+          ]
+        },
+        {
+          "level": "low",
+          "title": "대용량 커밋이 코드 리뷰와 롤백을 어렵게 함",
+          "why": "4929줄(3b44c4f), 4517줄(51fbff5) 등 거대 커밋이 존재합니다. 버그 발생 시 문제 커밋을 특정하기 어렵고, 부분 롤백이 불가능합니다.",
+          "steps": [
+            "앞으로의 작업은 기능 단위로 분리하여 커밋 (에셋 추가와 스크립트 변경을 분리)",
+            "씬 파일(.unity)과 코드 파일(.cs) 변경을 별도 커밋으로 분리"
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "title": "미머지 브랜치 통합 및 최종 빌드 테스트",
+          "why": "stage/shark(35 ahead)와 stage/manhole이 main에 머지되지 않은 상태에서 발표일이 임박했습니다. 통합하지 않으면 발표 시 일부 스테이지를 보여줄 수 없습니다.",
+          "steps": [
+            "1. main을 origin/main으로 fast-forward (git pull)",
+            "2. stage/shark를 main에 머지 (충돌 해결 우선)",
+            "3. stage/manhole을 main에 머지",
+            "4. Quest 기기에서 Title→Lobby→각 Stage→Result→Lobby 전체 플로우 테스트",
+            "5. 미완성 스테이지는 LobbyManager에서 비활성화"
+          ]
+        },
+        {
+          "title": "VR 컴포트 검증 (멀미 방지)",
+          "why": "CarMover의 강제 머리 회전, DeathCameraEffect의 슬로모션+카메라 상승, PhysicsKnockback의 XR Origin 물리 이동 등 VR 멀미를 유발할 수 있는 요소가 여러 곳에 있습니다. 발표 시 체험자가 불편을 느끼면 감점 요인이 됩니다.",
+          "steps": [
+            "1. CarMover에서 강제 회전 제거 또는 속도 대폭 감소",
+            "2. PhysicsKnockback의 force/torque 값을 보수적으로 조정",
+            "3. 팀원 3명이 각각 모든 스테이지를 연속 플레이하며 어지러움 체크",
+            "4. slowMoScale을 0.2→0.4 정도로 완화 검토"
+          ]
+        },
+        {
+          "title": "글로벌 네임스페이스 파일 정리",
+          "why": "프로젝트의 다른 파일들은 DumbWays.Gameplay 등의 네임스페이스를 잘 사용하고 있지만, 최근 추가된 파일 5개가 네임스페이스 없이 작성되어 일관성이 깨졌습니다.",
+          "steps": [
+            "1. PlayerRespawnBound.cs → namespace DumbWays.Core 추가",
+            "2. StageHapticPlayer.cs → namespace DumbWays.Gameplay 추가",
+            "3. ResultScreenSystem.cs, LazyFollowUI.cs → namespace DumbWays.UI 추가",
+            "4. TrafficLightController.cs → namespace DumbWays.Gameplay 추가"
+          ]
+        }
+      ],
+      "commit_analysis": "커밋 메시지 설명률 92%로 매우 우수하며, 'feat:', 'fix:', 'chore:' 컨벤셔널 커밋 형식을 일관되게 사용하고 있습니다. tfarcenim123-afk가 161커밋(48%)으로 가장 활발하고, 오늘 하루에만 15개 이상의 커밋을 남기며 리스폰 시스템(PlayerRespawnBound)과 로드킬 스테이지를 집중적으로 개발 중입니다. Juhyun Son은 Manhole 스테이지 기초 구현을 담당하고 있습니다. 중앙값 56줄 대비 평균 401줄로 편차가 크며, 4000줄 이상의 거대 커밋 5건은 대부분 씬 파일과 에셋 추가로 인한 것이라 내용상으로는 이해 가능하지만, 코드 변경과 에셋 변경을 분리하면 리뷰와 롤백이 훨씬 수월해질 것입니다. 최근 커밋에서 '바닥 관통 버그 수정→리스폰 조건 변경→영역 기반 변경→CharacterController 비활성화' 순서로 문제를 단계적으로 해결해 나간 흔적이 보이며, 디버깅 능력이 좋습니다.",
+      "architecture_notes": "VContainer DI를 활용한 의존성 주입, 7개 asmdef으로 구성된 순환 없는 모듈 경계(Core→Gameplay→DeathEffects→DeathTriggers→Scope→UI), 이벤트 기반 느슨한 결합(Observer 패턴)이 아키텍처의 3대 축입니다. GameBootstrap의 RuntimeInitializeOnLoadMethod 자동 초기화와 VRRigBuilder의 sticky 이벤트 패턴은 실무에서도 사용할 수준의 설계입니다. 사망 시퀀스의 데이터 흐름이 DeathTrigger→StageCommonSystem→(OnPlayerDeath)→DeathCameraEffect→(OnCameraRiseComplete)→ResultScreenSystem으로 이벤트 체이닝되어, 각 컴포넌트가 독립적으로 교체 가능합니다. 학생 프로젝트에서 이 수준의 아키텍처를 구현한 것은 매우 인상적이며, 유일한 개선점은 글로벌 네임스페이스 파일 정리와 StageScope의 수동 트리거 등록을 인터페이스 기반 자동 등록으로 전환하는 것입니다.",
+      "project_narrative": "이 팀은 'Dumb Ways to Die' 컨셉의 VR 블랙코미디 데스게임을 개발하고 있으며, 죽음이 곧 스테이지 클리어라는 독특한 게임 메카닉을 중심으로 가스탱크 폭발, 전자레인지 폭발, 곰덫, 독버섯 먹기, 로드킬, 상어, 맨홀 등 다양한 사망 시나리오를 구현하고 있습니다. GameBootstrap→VRRigBuilder→GameManager→StageCommonSystem으로 이어지는 자동 초기화 파이프라인과 VContainer DI, 7개 asmdef 모듈화, 이벤트 기반 아키텍처는 학생 프로젝트 수준을 크게 넘어서는 완성도를 보여줍니다. DeathCameraEffect(슬로모션+카메라 상승+시체 내려다보기), PhysicsKnockback(폭발 넉백 물리), 8종의 BaseDeathEffect 서브클래스, StageHapticPlayer(컨트롤러 진동) 등 사망 연출 시스템이 특히 풍부합니다. 현재 가장 시급한 것은 stage/shark와 stage/manhole 미머지 브랜치를 main에 통합하고, CarMover의 강제 머리 회전을 VR 컴포트에 맞게 수정한 후, 전체 플로우(Title→Lobby→Stage→Death→Result→Lobby)를 Quest 기기에서 엔드투엔드 테스트하는 것입니다."
+    },
+    "file_counts": {
+      "cs": 71,
+      "unity": 14,
+      "prefab": 30,
+      "mat": 55,
+      "anim": 1,
+      "asset": 6,
+      "png_jpg": 34,
+      "asmdef": 7,
+      "audio": 11,
+      "fbx": 14,
+      "shader": 4
+    },
+    "commit_quality": {
+      "avg_lines": 401,
+      "median_lines": 56,
+      "oversized": [
+        {
+          "hash": "3b44c4f",
+          "message": "feat: Shark 스테이지 기초 세팅 — 수중 환경, 상어 AI, 부유 이동",
+          "lines_changed": 4929,
+          "files_changed": 49
+        },
+        {
+          "hash": "51fbff5",
+          "message": "feat: scene에 gameobject 배치",
+          "lines_changed": 4517,
+          "files_changed": 35
+        },
+        {
+          "hash": "2ee0eb5",
+          "message": "chore: shark stage 에셋·씬·머티리얼 정리 및 기타 변경 사항 반영",
+          "lines_changed": 4220,
+          "files_changed": 38
+        },
+        {
+          "hash": "c8679a5",
+          "message": "feat: stage/manhole 스테이지 기초 구현",
+          "lines_changed": 3809,
+          "files_changed": 34
+        },
+        {
+          "hash": "e77f468",
+          "message": "feat: update JH testing scene with new assets, materials, and textures",
+          "lines_changed": 3588,
+          "files_changed": 41
+        }
+      ],
+      "msg_descriptive_pct": 92,
+      "msg_short_count": 7,
+      "total": 235
+    },
+    "hot_files": [
+      {
+        "file": "Mona12 SDF.asset",
+        "path": "Assets/_Game/Scenes/Testing_JH/Fonts/Mona12 SDF.asset",
+        "change_count": 24
+      },
+      {
+        "file": "EditorBuildSettings.asset",
+        "path": "ProjectSettings/EditorBuildSettings.asset",
+        "change_count": 22
+      },
+      {
+        "file": "Stage1.unity",
+        "path": "Assets/_Game/Scenes/Testing_SJ/Stage1.unity",
+        "change_count": 20
+      },
+      {
+        "file": "ProjectSettings.asset",
+        "path": "ProjectSettings/ProjectSettings.asset",
+        "change_count": 18
+      },
+      {
+        "file": "Android Preset.asset",
+        "path": "Assets/Settings/Project Configuration/Android Preset.asset",
+        "change_count": 15
+      },
+      {
+        "file": "Stage2.unity",
+        "path": "Assets/_Game/Scenes/Testing_SJ/Stage2.unity",
+        "change_count": 15
+      },
+      {
+        "file": "Stage_Shark.unity",
+        "path": "Assets/_Game/_Scenes/Stage_Shark.unity",
+        "change_count": 14
+      },
+      {
+        "file": "StageCommonSystem.cs",
+        "path": "Assets/_Game/Scripts/Gameplay/StageCommonSystem.cs",
+        "change_count": 14
+      },
+      {
+        "file": "akadylan.plain SDF.asset",
+        "path": "Assets/_Game/Scenes/Testing_JH/Fonts/akadylan.plain SDF.asset",
+        "change_count": 14
+      },
+      {
+        "file": "Stage3.unity",
+        "path": "Assets/_Game/Scenes/Testing_SJ/Stage3.unity",
+        "change_count": 14
+      }
+    ],
+    "file_path_map": {
+      "BGMManager.cs": "Assets/_Game/Scripts/Core/BGMManager.cs",
+      "GameBootstrap.cs": "Assets/_Game/Scripts/Core/GameBootstrap.cs",
+      "GameManager.cs": "Assets/_Game/Scripts/Core/GameManager.cs",
+      "PlayerRespawnBound.cs": "Assets/_Game/Scripts/Core/PlayerRespawnBound.cs",
+      "SaveData.cs": "Assets/_Game/Scripts/Core/SaveData.cs",
+      "SaveManager.cs": "Assets/_Game/Scripts/Core/SaveManager.cs",
+      "StageRegistry.cs": "Assets/_Game/Scripts/Core/StageRegistry.cs",
+      "VRCanvasAdapter.cs": "Assets/_Game/Scripts/Core/VRCanvasAdapter.cs",
+      "VRRigBuilder.cs": "Assets/_Game/Scripts/Core/VRRigBuilder.cs",
+      "XROriginSceneReset.cs": "Assets/_Game/Scripts/Core/XROriginSceneReset.cs",
+      "StageCommonSystem.cs": "Assets/_Game/Scripts/Gameplay/StageCommonSystem.cs",
+      "StageHapticPlayer.cs": "Assets/_Game/Scripts/Gameplay/StageHapticPlayer.cs",
+      "StageSFXPlayer.cs": "Assets/_Game/Scripts/Gameplay/StageSFXPlayer.cs",
+      "StageVFXPlayer.cs": "Assets/_Game/Scripts/Gameplay/StageVFXPlayer.cs",
+      "BaseDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/BaseDeathEffect.cs",
+      "BaseDeathOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/BaseDeathOverlay.cs",
+      "DeathBodyController.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/DeathBodyController.cs",
+      "DeathCameraAnimator.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/DeathCameraAnimator.cs",
+      "DeathCameraEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/DeathCameraEffect.cs",
+      "DeathEffectTester.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/DeathEffectTester.cs",
+      "DeathObjectHider.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/DeathObjectHider.cs",
+      "DeathOverlayRenderer.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/DeathOverlayRenderer.cs",
+      "HeadTrackingController.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/HeadTrackingController.cs",
+      "KnockbackHandler.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/KnockbackHandler.cs",
+      "OverlayCanvasFactory.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/OverlayCanvasFactory.cs",
+      "OverlayImageData.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/OverlayImageData.cs",
+      "PhysicsKnockback.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Core/PhysicsKnockback.cs",
+      "BruiseDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/BruiseDeathEffect.cs",
+      "BruiseOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/BruiseOverlay.cs",
+      "BurnDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/BurnDeathEffect.cs",
+      "BurnDeathEffect_Melt.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/BurnDeathEffect_Melt.cs",
+      "BurnOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/BurnOverlay.cs",
+      "DefaultDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/DefaultDeathEffect.cs",
+      "ElectrocutionDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/ElectrocutionDeathEffect.cs",
+      "ElectrocutionOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/ElectrocutionOverlay.cs",
+      "FireScreenOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/FireScreenOverlay.cs",
+      "GasTankDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/GasTankDeathEffect.cs",
+      "GasTankExplosionOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/GasTankExplosionOverlay.cs",
+      "GasTankFlameEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/GasTankFlameEffect.cs",
+      "GasTankSmokeParticles.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/GasTankSmokeParticles.cs",
+      "MicrowaveDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/MicrowaveDeathEffect.cs",
+      "MushroomDeathEffect.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/MushroomDeathEffect.cs",
+      "MushroomHallucinationOverlay.cs": "Assets/_Game/Scripts/Gameplay/DeathEffects/Stages/MushroomHallucinationOverlay.cs",
+      "BearTrapDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/BearTrapDeathTrigger.cs",
+      "CollisionDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/CollisionDeathTrigger.cs",
+      "EatAnimator.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/EatAnimator.cs",
+      "EatAudioPlayer.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/EatAudioPlayer.cs",
+      "EatDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/EatDeathTrigger.cs",
+      "EatDebrisSpawner.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/EatDebrisSpawner.cs",
+      "EatInputReader.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/EatInputReader.cs",
+      "GasTankDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/GasTankDeathTrigger.cs",
+      "GrabbableResetter.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/GrabbableResetter.cs",
+      "GrabContactDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/GrabContactDeathTrigger.cs",
+      "GrabProximityGate.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/GrabProximityGate.cs",
+      "LighterIgniter.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/LighterIgniter.cs",
+      "MicrowaveDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/MicrowaveDeathTrigger.cs",
+      "SocketDeathTrigger.cs": "Assets/_Game/Scripts/Gameplay/DeathTriggers/SocketDeathTrigger.cs",
+      "CarMover.cs": "Assets/_Game/Scripts/Gameplay/Roadkill/CarMover.cs",
+      "RoadEnterTrigger.cs": "Assets/_Game/Scripts/Gameplay/Roadkill/RoadEnterTrigger.cs",
+      "TrafficLightController.cs": "Assets/_Game/Scripts/Gameplay/Roadkill/TrafficLightController.cs",
+      "StageScope.cs": "Assets/_Game/Scripts/Gameplay/Scope/StageScope.cs",
+      "PlayerInteractionBlocker.cs": "Assets/_Game/Scripts/Gameplay/StageEnd/PlayerInteractionBlocker.cs",
+      "ResultScreenSystem.cs": "Assets/_Game/Scripts/Gameplay/StageEnd/ResultScreenSystem.cs",
+      "InteractableHighlight.cs": "Assets/_Game/Scripts/UI/InteractableHighlight.cs",
+      "InteractableStateBase.cs": "Assets/_Game/Scripts/UI/InteractableStateBase.cs",
+      "InteractableTooltip.cs": "Assets/_Game/Scripts/UI/InteractableTooltip.cs",
+      "LazyFollowUI.cs": "Assets/_Game/Scripts/UI/LazyFollowUI.cs",
+      "LobbyManager.cs": "Assets/_Game/Scripts/UI/LobbyManager.cs",
+      "TitleManager.cs": "Assets/_Game/Scripts/UI/TitleManager.cs",
+      "GlassBlurManager.cs": "Assets/_Game/_Scenes/Testing_JH/Scripts/GlassBlurManager.cs",
+      "VRGlassmorphismButton.cs": "Assets/_Game/_Scenes/Testing_JH/Scripts/VRGlassmorphismButton.cs"
+    }
+  },
+  "IronSarcophagus": {
+    "project": {
+      "name": "IronSarcophagus",
+      "dir": "IronSarcophagus",
+      "repo": "IronSarcophagus",
+      "description": "VR 멀티플레이 탱크 시뮬레이션",
+      "platform": "Netcode + VR",
+      "primary_branch": "develop",
+      "expected_systems": [
+        "GameManager",
+        "AuthUI",
+        "LobbiesUI",
+        "RoleSync",
+        "TankStatus",
+        "AimController",
+        "BallisticCalc",
+        "FireSystem",
+        "WaveManager",
+        "EnemyTank",
+        "HUDController",
+        "PlayerSpawner"
+      ]
+    },
+    "git": {
+      "total_commits": 142,
+      "contributors": [
+        {
+          "name": "Nullma",
+          "commits": 65,
+          "last_date": "2026-03-27",
+          "days_inactive": 2
+        },
+        {
+          "name": "이재영",
+          "commits": 31,
+          "last_date": "2026-03-30",
+          "days_inactive": 0
+        },
+        {
+          "name": "namwon-RT",
+          "commits": 23,
+          "last_date": "2026-03-17",
+          "days_inactive": 12
+        }
+      ],
+      "branches": [
+        {
+          "name": "origin/feature/jwt_0000",
+          "ahead": 3,
+          "behind": 102,
+          "last_activity": "2026-03-16"
+        },
+        {
+          "name": "main",
+          "ahead": 1,
+          "behind": 63,
+          "last_activity": "2026-03-20"
+        },
+        {
+          "name": "origin",
+          "ahead": 1,
+          "behind": 63,
+          "last_activity": "2026-03-20"
+        },
+        {
+          "name": "origin/fix/compiler-warnings",
+          "ahead": 1,
+          "behind": 6,
+          "last_activity": "2026-03-30"
+        },
+        {
+          "name": "origin/main",
+          "ahead": 1,
+          "behind": 63,
+          "last_activity": "2026-03-20"
+        },
+        {
+          "name": "(HEAD detached at origin/develop)",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "N/A"
+        },
+        {
+          "name": "develop",
+          "ahead": 0,
+          "behind": 25,
+          "last_activity": "2026-03-25"
+        },
+        {
+          "name": "origin/feat/DeathSystem",
+          "ahead": 0,
+          "behind": 38,
+          "last_activity": "2026-03-25"
+        },
+        {
+          "name": "origin/feat/DriverHUD",
+          "ahead": 0,
+          "behind": 58,
+          "last_activity": "2026-03-24"
+        },
+        {
+          "name": "origin/feat/EnemyAI",
+          "ahead": 0,
+          "behind": 66,
+          "last_activity": "2026-03-20"
+        },
+        {
+          "name": "origin/feat/GunnerAim",
+          "ahead": 0,
+          "behind": 23,
+          "last_activity": "2026-03-26"
+        },
+        {
+          "name": "origin/feat/GunnerHUD",
+          "ahead": 0,
+          "behind": 61,
+          "last_activity": "2026-03-24"
+        },
+        {
+          "name": "origin/feat/HUDPolish",
+          "ahead": 0,
+          "behind": 24,
+          "last_activity": "2026-03-26"
+        },
+        {
+          "name": "origin/feat/LoaderHUD",
+          "ahead": 0,
+          "behind": 39,
+          "last_activity": "2026-03-25"
+        },
+        {
+          "name": "origin/feat/RepairHUD",
+          "ahead": 0,
+          "behind": 58,
+          "last_activity": "2026-03-24"
+        },
+        {
+          "name": "origin/feat/SharedHUD",
+          "ahead": 0,
+          "behind": 59,
+          "last_activity": "2026-03-24"
+        },
+        {
+          "name": "origin/feat/VFX",
+          "ahead": 0,
+          "behind": 12,
+          "last_activity": "2026-03-27"
+        },
+        {
+          "name": "origin/feature/AnnihilationGameMode",
+          "ahead": 0,
+          "behind": 6,
+          "last_activity": "2026-03-30"
+        }
+      ],
+      "last_commit_date": "2026-03-30",
+      "last_commit_msg": "merge(develop): feature/AnnihilationGameMode 병합 — VFX 유지, 씬 충돌 develop 기준",
+      "recent_commits": [
+        {
+          "hash": "a19fa26",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "fix: 컴파일러 경고 5개 해결"
+        },
+        {
+          "hash": "1d190ce",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "chore(Scene): LJY 임시 씬(11_Temp_LJY) 업데이트"
+        },
+        {
+          "hash": "97b5c31",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "fix: AmmoDispenser 중복 Grab 레이스 컨디션 방지 및 UI/Loader 개선"
+        },
+        {
+          "hash": "d8b8133",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "fix(AimController): Grab 후 ContinuousTurnProvider가 공유 InputAction 비활성화하는 버그 수정"
+        },
+        {
+          "hash": "e5aef2f",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "fix(AimController): NetworkVariable 쓰기 권한을 Owner→Server로 변경하여 비-호스트 Gunner 클라이언트의 ThumbStick 조준 불가 버그 수정"
+        },
+        {
+          "hash": "46e973c",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "fix(WaveManager): 웨이브 시작 시 총 적 수 broadcast 및 Race Condition 수정"
+        },
+        {
+          "hash": "fa0fbb5",
+          "author": "이재영",
+          "date": "2026-03-30",
+          "message": "feat(TankInterior): 전차 내부 3D 모델 추가 및 씬 배치"
+        },
+        {
+          "hash": "f26dd27",
+          "author": "이재영",
+          "date": "2026-03-27",
+          "message": "feat(AnnihilationGameMode): 섬멸전 게임 모드 구현"
+        },
+        {
+          "hash": "dc72b03",
+          "author": "Nullma",
+          "date": "2026-03-27",
+          "message": "fix: AmmoPackDispenser.OnDestroy public override 접근제한자 수정"
+        },
+        {
+          "hash": "6932776",
+          "author": "Nullma",
+          "date": "2026-03-27",
+          "message": "fix(Build): UTerminal Android 빌드 에러 및 deprecated API 경고 수정"
+        },
+        {
+          "hash": "8e05bfe",
+          "author": "Nullma",
+          "date": "2026-03-27",
+          "message": "feat(VFX): ImpactVFXHandler, EnemyVFXHandler 및 VFX 프리팹 병합 (feat/VFX)"
+        },
+        {
+          "hash": "0627364",
+          "author": "Nullma",
+          "date": "2026-03-27",
+          "message": "feat(VFX): 착탄/포구 VFX 핸들러 추가 — ImpactVFXHandler, EnemyVFXHandler"
+        },
+        {
+          "hash": "ed91a45",
+          "author": "이재영",
+          "date": "2026-03-27",
+          "message": "refactor/Aimcontroller UnityEditor 전처리기 제거"
+        },
+        {
+          "hash": "d91dfa7",
+          "author": "이재영",
+          "date": "2026-03-27",
+          "message": "fix(TankDriver): 운전 중 역할 변경 시 정지 처리 버그 수정"
+        },
+        {
+          "hash": "cbd8b20",
+          "author": "이재영",
+          "date": "2026-03-27",
+          "message": "feat(TankDriver/StationMapUI): 운전 상태 static 이벤트 추가 및 맵 UI 자동 숨김 구현"
+        }
+      ],
+      "commits_per_week": 60,
+      "primary_branch": "develop",
+      "days_since_last_commit": 0,
+      "weekly_trend": [
+        0,
+        38,
+        44,
+        60
+      ],
+      "unmerged_branches": 5
+    },
+    "claude": {
+      "progress_pct": 78,
+      "phases": {
+        "foundation": {
+          "score": 5,
+          "reason": "Unity 프로젝트 구조가 체계적으로 세팅됨. 00_Core~06_Systems까지 폴더 분류, 네임스페이스(IronSarcophagus.Tank, Enemy, Network 등) 일관 적용, GameConst.cs로 매직넘버 중앙 관리, asmdef 7개로 컴파일 분리, Netcode + XRI 통합 완료. 씬 6개(Boot/Title/Lobby/Game/Temp×2) 구성. UGS 인증·세션 서비스 연동까지 완료되어 기반 인프라는 빠짐없이 갖춰짐."
+        },
+        "core_systems": {
+          "score": 25,
+          "reason": "12개 기대 시스템 중 12개 모두 실제 동작 로직이 구현됨. GameManager는 상태머신 기반 씬 전환(Authenticating→InGamePlaying), AuthUI는 UGS async 인증, LobbiesUI는 세션 생성/코드참가/퀵조인, RoleSync는 4인 역할 배정+소유권 이전+좌석 텔레포트, TankStatus는 방향별 장갑 관통 물리+부위별 HP+파괴 판정, AimController는 클라이언트 예측+서버 동기화+줌/민감도, BallisticCalc는 포물선 탄도 시뮬레이션, FireSystem은 발사→비행시간→스플래시 데미지 파이프라인, WaveManager는 웨이브 스폰+생존수 추적+Fisher-Yates 셔플, EnemyTank는 6단계 상태머신+인지도 시스템+전술 재배치, HUD는 역할별 3종(Gunner/Driver/Shared)+미니맵+데미지 인디케이터, PlayerAvatarSpawner는 XR 아바타 스폰. 다만 EnemyLightVehicle AI의 구현 깊이가 EnemyTank 대비 얕고, RepairSystem은 ServerRpc만 존재하고 실제 수리 인터랙션 UI/로직이 부족함."
+        },
+        "integration": {
+          "score": 22,
+          "reason": "게임 루프가 명확하게 연결됨: GameManager.Workflow() 코루틴이 Boot→Auth→Lobby→Game 씬 전환을 관리하고, AnnihilationGameMode가 WaveManager.StartGame()을 호출하여 전투 시작, WaveManager.OnAllWavesCleared→AnnihilationGameMode→ShowGameClearRpc로 승리 판정이 전 클라이언트에 전파됨. AimController.OnFireRequested→BarrelLoader.NotifyFired→FireSystem.HandleFireRequested→BallisticCalc.GetImpactPoint→SplashDamageUtils.Apply로 발사 체인 완성. RoleSync.OnLocalRoleChanged 이벤트로 역할별 HUD/입력 활성화가 연동됨. 그러나 develop 브랜치가 main 대비 25 커밋 뒤처져 있고, 5개 미병합 브랜치(feat/DeathSystem, feat/DriverHUD 등)가 남아있어 최종 통합이 불완전함. 게임 오버(탱크 파괴) 후 재시작/로비 복귀 흐름의 코드 연결이 확인되지 않음."
+        },
+        "content": {
+          "score": 8,
+          "reason": "프리팹 41개(전차, 적, 탄약, VFX, UI 등), 3D 모델 9개(fbx), 텍스처 78개, 머티리얼 17개, 셰이더 2개로 시각 에셋은 양호. VFX 프리팹 9개(ImpactVFXHandler, EnemyVFXHandler 등)와 최근 전차 내부 3D 모델 추가(fa0fbb5). 그러나 오디오 파일 0개(SFX/BGM 폴더만 존재), 애니메이션 클립 0개로 청각·동적 피드백이 전무함. VR 체험에서 발사음/엔진음/피격음 부재는 몰입감에 큰 영향."
+        },
+        "polish": {
+          "score": 10,
+          "reason": "커밋 메시지 품질 96% 서술적이며 conventional commit 형식(feat/fix/chore) 준수. 네임스페이스 일관성 양호(IronSarcophagus.*). 최근 커밋에서 레이스 컨디션 수정(AmmoDispenser _isRequestPending, WaveManager 초기 카운트), NetworkVariable 권한 수정(Owner→Server), ContinuousTurnProvider 충돌 방어 등 실전 버그 수정이 활발. SharedHUDController(494줄)와 EnemyTank(736줄)가 300줄 권장을 크게 초과. SharedHUDController.cs:409에 빈 catch 블록 존재(태그 미등록 방어용이나 CLAUDE.md 금지 패턴). 저장/로드 시스템은 미구현. UI 에러 피드백(인증 실패, 네트워크 끊김 등)은 Debug.Log 수준으로 사용자 facing UI 부족."
+        }
+      },
+      "found_systems": [
+        "GameManager",
+        "AuthUI",
+        "LobbiesUI",
+        "RoleSync",
+        "TankStatus",
+        "AimController",
+        "BallisticCalc",
+        "FireSystem",
+        "WaveManager",
+        "EnemyTank",
+        "HUDController (GunnerHUD, DriverHUD, SharedHUD)",
+        "PlayerSpawner"
+      ],
+      "missing_systems": [],
+      "scores": {
+        "code": 7,
+        "code_reason": "전반적으로 높은 품질의 코드. AimController의 클라이언트 예측 패턴(로컬 _localYaw/_localPitch + UpdateAimServerRpc delta 전송)은 Netcode 모범 사례를 잘 따름. EnemyTank의 인지도 시스템(CalculateExposure 5점 Linecast, 3단계 awareness rate)은 학생 프로젝트 수준을 상회하는 설계. 다만 EnemyTank.cs가 736줄로 권장의 2.4배이며 상태머신·전투·데미지·장갑을 하나에 담아 SRP를 위반하고, SharedHUDController.cs:409의 빈 catch 블록은 프로젝트 규칙 위반임.",
+        "architecture": 8,
+        "architecture_reason": "서버 권위(Server Authority) 아키텍처가 일관되게 적용됨 — TankStatus.TakeDamageServerRpc, AimController.UpdateAimServerRpc, WaveManager의 서버 전용 스폰 등. Observer 패턴(OnLocalRoleChanged, OnFireRequested, OnAliveCountChanged)으로 시스템 간 결합도를 낮춤. GameManager의 상태머신 + 코루틴 씬 전환, AnnihilationGameMode의 static 이벤트 브릿지 패턴은 NetworkObject↔씬 UI 분리 문제를 실용적으로 해결. GameConst.cs로 상수 중앙화도 좋은 판단.",
+        "overall": 7
+      },
+      "code_review": [
+        {
+          "file": "EnemyTank.cs",
+          "verdict": "needs_work",
+          "comment": "736줄로 프로젝트에서 가장 큰 파일. AI 상태머신(Idle→Alert→Combat→Repositioning→Tracking→Immobilized), 인지도 시스템(CalculateExposure 5점 Linecast), 포탑/차체 회전, 발사 로직, 부위별 HP+장갑 관통 계산까지 모두 하나의 클래스에 집중. 각 기능의 구현 품질은 높으나(accuracy 기반 spread, 방향별 장갑 프로파일, 탄약고 유폭 확률 등), 단일 책임 원칙을 크게 위반. EnemyAwareness, EnemyCombat, EnemyArmor 등으로 분리하면 유지보수성이 크게 향상됨. _turretTransform null 시 fallback으로 transform.position + Vector3.up*2f를 사용하는 GetMuzzlePos()는 안전한 처리."
+        },
+        {
+          "file": "AimController.cs",
+          "verdict": "good",
+          "comment": "499줄이지만 복잡한 책임(XR 입력, 네트워크 동기화, 줌, 민감도, 발사 요청)을 체계적으로 관리. 최근 diff에서 NetworkVariable 쓰기 권한을 Owner→Server로 변경하고 클라이언트 예측(_localYaw/_localPitch)을 도입한 것은 Netcode 비-호스트 클라이언트 문제를 정확히 해결. ContinuousTurnProvider가 공유 InputAction을 비활성화하는 XRI 엣지케이스도 방어적 재활성화로 처리(line 345). OnNetworkSpawn에서 WaitForRoleSync 코루틴으로 RoleSync 초기화 타이밍 문제를 해결한 것도 좋은 패턴."
+        },
+        {
+          "file": "TankStatus.cs",
+          "verdict": "good",
+          "comment": "339줄로 약간 초과하나 부위별 HP(Hull/Turret/Engine/Barrel/AmmoRack/Track), 방향별 장갑(Front/Side/Rear), 관통 판정(cos(angle) 유효 관통력), 리코셰 데미지(5%), 스필오버 데미지 등 복잡한 전차 시뮬레이션 데미지 모델을 잘 구현. IDamageable 인터페이스로 EnemyTank과 동일한 데미지 파이프라인 공유. NetworkVariable<PartHPState>로 전체 부위 HP를 단일 변수로 동기화하는 것은 네트워크 효율적인 선택."
+        },
+        {
+          "file": "WaveManager.cs",
+          "verdict": "good",
+          "comment": "최근 리팩토링(diff)에서 SpawnWave 시작 시 총 적 수를 미리 설정하여 UI 레이스 컨디션을 방어한 것이 인상적. OnAliveCountChanged 이벤트 추가로 AnnihilationGameMode와의 연동도 깔끔. StartGame()을 OnNetworkSpawn에서 분리하여 게임 모드 컨트롤러가 명시적으로 호출하도록 변경한 것은 확장성 좋은 설계. EnemyBase 없는 프리팹 스폰 시 카운트에서 제외하는 방어 로직도 적절."
+        },
+        {
+          "file": "RoleSync.cs",
+          "verdict": "needs_work",
+          "comment": "407줄로 300줄 권장 초과. 4인 역할 배정, 소유권 이전, 좌석 텔레포트, UI 오브젝트 활성화를 모두 담당. NetworkVariable<ulong> 4개로 각 역할의 점유 클라이언트를 추적하는 구조는 적절하나, GetOccupant()에서 StationRole별 switch-case가 반복되는 패턴이 다수. _stations 배열과 StationRole enum의 인덱스 매핑이 Inspector 설정에 의존하여 불일치 시 런타임 오류 위험."
+        },
+        {
+          "file": "SharedHUDController.cs",
+          "verdict": "needs_work",
+          "comment": "494줄로 프로젝트 최대 초과. 데미지 상태 패널, 미니맵(적 마커 스캔+회전), 좌석 상태 인디케이터 3개 서브시스템을 하나에 담음. RebuildMarkers()에서 FindGameObjectsWithTag를 1초 간격으로 호출하는 것은 VR 프레임레이트에 영향 줄 수 있음. line 409의 빈 catch 블록은 CLAUDE.md 금지 패턴 위반 — 태그 미등록 시 예외를 삼키고 있음. DamagePanel, Minimap, SeatStatus로 컴포넌트 분리 권장."
+        },
+        {
+          "file": "FireSystem.cs",
+          "verdict": "good",
+          "comment": "129줄로 간결하며 단일 책임(발사 요청 처리→탄도 계산→시각 투사체 스폰→지연 데미지 적용)에 충실. ProjectilePoolManager.Instance?.Get()으로 풀링 안전 접근, BallisticCalc.CalculateTimeOfFlight로 비행시간 계산 후 WaitForSeconds로 지연 데미지 적용하는 흐름이 명확. HandleFireRequested()에서 _barrelLoader.CurrentAmmoData null 체크 누락이 잠재적 위험."
+        },
+        {
+          "file": "AnnihilationGameMode.cs",
+          "verdict": "good",
+          "comment": "77줄로 깔끔한 게임 모드 컨트롤러. WaveManager 서버 이벤트를 static 이벤트+ClientRpc로 전 클라이언트에 브릿지하는 패턴이 NetworkObject↔씬 UI 참조 불가 문제를 실용적으로 해결. OnNetworkDespawn에서 이벤트 구독 해제도 빠짐없이 처리. GameManager.SelectedMode 체크로 모드별 분기도 준비됨."
+        }
+      ],
+      "code_issues": [
+        {
+          "file": "EnemyTank.cs",
+          "description": "736줄로 CLAUDE.md 권장(300줄)의 2.4배 초과. AI 상태머신, 인지도 시스템, 전투 로직, 장갑/데미지 계산이 하나의 클래스에 집중되어 유지보수 어려움",
+          "severity": "medium"
+        },
+        {
+          "file": "SharedHUDController.cs:409",
+          "description": "빈 catch 블록으로 FindGameObjectsWithTag 예외를 무시. CLAUDE.md에서 명시적으로 금지한 패턴(try-catch에서 에러 무시). 최소한 Debug.LogWarning으로 기록해야 함",
+          "severity": "medium"
+        },
+        {
+          "file": "SharedHUDController.cs",
+          "description": "RebuildMarkers()에서 FindGameObjectsWithTag를 _markerScanInterval(1초) 간격으로 반복 호출. VR 90fps 환경에서 GC 압박 가능. 적 스폰/사망 이벤트 기반으로 변경하면 성능 개선",
+          "severity": "medium"
+        },
+        {
+          "file": "FireSystem.cs:61",
+          "description": "HandleFireRequested()에서 _barrelLoader.CurrentAmmoData를 BallisticCalc.SetAmmoData()에 전달 시 null 체크 없음. 탄약 없이 발사 시도 시 NullReferenceException 위험",
+          "severity": "high"
+        },
+        {
+          "file": "RoleSync.cs",
+          "description": "NetworkManager.Singleton.LocalClientId를 null 체크 없이 접근하는 부분 존재. 네트워크 초기화 전 호출 시 NullReferenceException 발생 가능",
+          "severity": "medium"
+        },
+        {
+          "file": "AimController.cs",
+          "description": "_netYaw.Value에 클램프가 없어 360도 이상 무한 회전 가능. 실제 전차 포탑은 회전 제한이 없을 수 있으나, 네트워크 변수 float 오버플로 가능성 존재(장시간 플레이 시)",
+          "severity": "low"
+        },
+        {
+          "file": "EnemyBase.cs:35",
+          "description": "OnNetworkSpawn에서 GetComponent<NavMeshAgent>() 결과를 null 체크 없이 사용. [RequireComponent] 어트리뷰트가 없어 Inspector에서 NavMeshAgent 누락 시 런타임 에러",
+          "severity": "medium"
+        },
+        {
+          "file": "AmmoPackDispenser.cs",
+          "description": "_isRequestPending 플래그가 네트워크 지연으로 ReceivePackRpc가 오지 않을 경우 영구 true로 남아 디스펜서가 영구 잠금될 수 있음. 타임아웃 리셋 로직 필요",
+          "severity": "high"
+        },
+        {
+          "file": "WaveManager.cs",
+          "description": "SpawnEnemy()에서 NavMesh.SamplePosition 실패 시 로그만 출력하고 return하지만, _aliveCount는 이미 증가된 상태. 스폰 실패한 적 수만큼 웨이브가 영원히 끝나지 않을 수 있음",
+          "severity": "high"
+        },
+        {
+          "file": "BarrelLoader.cs",
+          "description": "OnAmmoInserted에서 XRSocketInteractor에 삽입된 오브젝트의 AmmoPack 컴포넌트를 GetComponent로 가져오는데, AmmoPack이 아닌 오브젝트가 소켓에 들어올 경우에 대한 방어 로직 필요",
+          "severity": "low"
+        }
+      ],
+      "risks": [
+        {
+          "level": "critical",
+          "title": "오디오 에셋 완전 부재 — VR 데모 몰입감 치명적 저하",
+          "why": "오디오 파일이 0개(SFX/BGM 폴더만 존재). VR 탱크 시뮬레이션에서 포격음, 엔진음, 피격음, 장전음이 없으면 시연 시 '미완성' 인상을 강하게 줌. 교수/심사위원이 가장 먼저 인지하는 부분",
+          "steps": [
+            "무료 에셋(Sonniss GDC Bundle 등)에서 tank_fire, reload, engine_loop, impact 4종 확보",
+            "AudioSource 컴포넌트를 FireSystem, TankDriver, BarrelLoader, TankStatus에 추가",
+            "3D Spatial Blend=1로 설정하여 VR 공간감 부여"
+          ]
+        },
+        {
+          "level": "high",
+          "title": "namwon-RT 12일 비활성 — 팀 기여도 불균형",
+          "why": "3인 팀에서 namwon-RT가 3/17 이후 커밋 없음(12일). 최근 4주간 이재영이 전체 작업의 대부분을 수행 중. 발표 시 팀원별 기여도 질문에 취약하며, 미병합 브랜치(feat/EnemyAI 등)가 namwon-RT 작업으로 추정되어 통합 리스크",
+          "steps": [
+            "namwon-RT에게 즉시 연락하여 잔여 작업(VFX 통합, 적 AI 튜닝) 할당",
+            "미병합 브랜치 5개를 이번 주 내 develop에 병합 또는 폐기 결정",
+            "발표자료에 역할 분담표 명시하여 기여도 시각화"
+          ]
+        },
+        {
+          "level": "high",
+          "title": "develop↔main 브랜치 25커밋 격차 및 미병합 브랜치 5개",
+          "why": "develop이 main 대비 25커밋 뒤처져 있고, feat/DeathSystem, feat/DriverHUD 등 5개 브랜치가 미병합. 발표 직전 대규모 병합 시 충돌 위험. 최근 커밋(a19fa26)에서도 씬 충돌 해결 흔적이 보임",
+          "steps": [
+            "오늘 중으로 develop → main 병합 시도",
+            "미병합 브랜치를 하나씩 develop에 머지 (충돌 최소화)",
+            "씬 파일(.unity) 충돌은 Smart Merge 또는 develop 기준 우선 채택"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "게임 오버/재시작 흐름 미완성",
+          "why": "TankStatus에서 Hull 또는 AmmoRack HP가 0이 되면 전차 파괴 판정이 되지만, 이후 게임 오버 UI 표시 → 로비 복귀 또는 재시작까지의 코드 연결이 불명확. GameManager.RestartGame()과 ReturnToTitle()은 존재하나 TankStatus.Die()에서의 호출 경로가 보이지 않음",
+          "steps": [
+            "TankStatus의 OnDied 이벤트를 GameManager가 구독하여 게임 오버 상태 전환",
+            "간단한 게임 오버 UI 패널(결과 텍스트 + 로비 복귀 버튼) 추가",
+            "AnnihilationGameMode.OnGameClear에 승리 UI 연결 확인"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "WaveManager 스폰 실패 시 웨이브 교착 가능성",
+          "why": "SpawnEnemy()에서 NavMesh.SamplePosition 실패 시 return하지만 _aliveCount는 이미 wave 전체 수로 초기화됨. 스폰 실패한 적은 HandleEnemyDied()가 호출되지 않아 _aliveCount가 0에 도달하지 못하고 다음 웨이브로 진행 불가",
+          "steps": [
+            "SpawnEnemy 실패 시 _aliveCount-- 및 OnAliveCountChanged 호출 추가",
+            "또는 실제 스폰 성공 수로 _aliveCount를 재설정하는 로직 추가"
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "title": "오디오 최소 4종 추가로 VR 데모 완성도 확보",
+          "why": "VR 탱크 게임에서 소리 없는 포격은 가장 눈에 띄는 미완성 요소. 무료 에셋으로 30분 내 기본 세팅 가능하며, 시연 인상을 크게 개선",
+          "steps": [
+            "Unity Asset Store 무료 'War SFX' 또는 freesound.org에서 cannon_fire, shell_reload, engine_idle, metal_impact 4종 다운로드",
+            "FireSystem.HandleFireRequested()에 AudioSource.PlayOneShot(fireClip) 추가",
+            "TankDriver.Update()에서 속도 비례 engine AudioSource.pitch 조절",
+            "TankStatus.ApplyPartDamage()에서 impact AudioSource 재생"
+          ]
+        },
+        {
+          "title": "EnemyTank.cs 736줄 → 3개 클래스로 분리",
+          "why": "현재 가장 큰 기술 부채. 버그 수정이나 밸런스 튜닝 시 700줄을 탐색해야 하며, 팀원 간 병렬 작업도 어려움",
+          "steps": [
+            "EnemyAwareness 클래스로 UpdateAwareness, CalculateExposure, IsInFOV, IsPlayerVisible 분리",
+            "EnemyArmorSystem 클래스로 CalculateDamage, ApplyPartDamage, EnemyPartHPState 분리",
+            "EnemyTank은 AILoop 상태머신과 이동/전투 코루틴만 유지"
+          ]
+        },
+        {
+          "title": "미병합 브랜치 정리 및 릴리스 브랜치 확정",
+          "why": "발표 2-3일 전 대규모 병합은 씬 충돌 등 치명적 문제 유발 가능. 지금 정리해야 안전",
+          "steps": [
+            "git log --oneline develop..origin/feat/DeathSystem 등으로 각 브랜치 변경량 확인",
+            "변경량 적은 브랜치부터 develop에 순차 병합",
+            "병합 완료 후 develop → main PR 생성, 팀 리뷰 후 최종 머지"
+          ]
+        }
+      ],
+      "commit_analysis": "커밋 메시지 품질이 96% 서술적으로 매우 우수하며, conventional commit 형식(feat/fix/chore/refactor)을 일관되게 사용. 특히 이재영의 최근 커밋들(fix(AimController): NetworkVariable 쓰기 권한을 Owner→Server로 변경하여...)은 변경 이유까지 메시지에 포함하여 모범적. 다만 평균 변경 라인이 650줄로 중앙값(144줄) 대비 과도하게 높은데, 이는 GunnerHUD(4867줄), EnemyAI(4449줄) 등 초대형 커밋 때문. 이런 커밋은 리뷰 불가능한 크기이며 Unity 프리팹/씬 변경이 포함된 것으로 추정됨. 주간 커밋 트렌드(0→38→44→60)가 가속되고 있어 마감 직전 집중 개발 패턴이 보이며, 이재영이 최근 모든 버그 수정과 기능 추가를 주도하고 있음.",
+      "architecture_notes": "서버 권위(Server Authority) 아키텍처가 전체 시스템에 일관되게 적용됨 — 데미지(TankStatus.TakeDamageServerRpc), 조준(AimController.UpdateAimServerRpc), 역할 배정(RoleSync.RequestBoardServerRpc), 스폰(WaveManager 서버 전용)이 모두 서버에서 검증됨. Observer 패턴을 적극 활용하여(OnFireRequested, OnLocalRoleChanged, OnAliveCountChanged, OnWaveStarted) 시스템 간 결합도를 효과적으로 낮춤. AnnihilationGameMode의 static event + ClientRpc 브릿지 패턴은 NetworkObject가 씬 UI를 직접 참조할 수 없는 Netcode 제약을 실용적으로 해결한 좋은 판단. 데이터 흐름은 Inspector SerializeField → NetworkVariable → OnValueChanged → UI 업데이트로 일관되며, AmmoData ScriptableObject로 탄종 데이터를 분리한 것도 적절한 SO 활용. 다만 RoleSync가 Singleton 패턴(Instance)인 반면 GameManager는 static 필드 기반이어서 생명주기 관리 방식이 혼재됨.",
+      "project_narrative": "IronSarcophagus 팀은 Netcode for GameObjects + XR Interaction Toolkit 기반의 VR 4인 협동 전차 시뮬레이션을 개발 중이며, 포수(AimController/FireSystem/BallisticCalc), 운전수(TankDriver), 장전수(BarrelLoader/AmmoPackDispenser), 수리수(TankStatus.RepairPartServerRpc) 4개 역할의 핵심 게임플레이가 구현되어 있다. 적 AI는 EnemyTank의 6단계 상태머신+인지도 시스템, EnemyInfantry의 병과별 행동으로 상당한 깊이를 가지며, WaveManager→AnnihilationGameMode→HUD로 이어지는 게임 루프도 완성되어 프로토타입 시연은 가능한 상태다. 가장 시급한 것은 오디오 에셋 부재(0개)로, VR 체험의 몰입감을 결정적으로 저해하고 있으며, 미병합 브랜치 5개의 통합과 게임 오버 흐름 완성이 발표 전까지 해결해야 할 핵심 과제이다. 코드 품질은 학생 프로젝트 수준을 상회하나, EnemyTank.cs(736줄)의 비대함과 namwon-RT의 12일 비활성이 유지보수와 팀 역학 측면에서 우려된다."
+    },
+    "file_counts": {
+      "cs": 56,
+      "unity": 6,
+      "prefab": 41,
+      "mat": 17,
+      "anim": 0,
+      "asset": 15,
+      "png_jpg": 78,
+      "asmdef": 7,
+      "audio": 0,
+      "fbx": 9,
+      "shader": 2
+    },
+    "commit_quality": {
+      "avg_lines": 650,
+      "median_lines": 144,
+      "oversized": [
+        {
+          "hash": "0906329",
+          "message": "feat(GunnerHUD): 포수 HUD 시스템 구현",
+          "lines_changed": 4867,
+          "files_changed": 27
+        },
+        {
+          "hash": "116eee6",
+          "message": "feat(enemy): 적 AI 전투 시스템 및 투사체 구현 (3/16)",
+          "lines_changed": 4449,
+          "files_changed": 37
+        },
+        {
+          "hash": "e832a80",
+          "message": "feat(enemy): 적 AI 전투 시스템 및 투사체 구현 (3/16)",
+          "lines_changed": 4391,
+          "files_changed": 37
+        },
+        {
+          "hash": "a9cd8c3",
+          "message": "feat(LoaderHUD): AmmoPackInfoDisplay 컴포넌트 및 탄 정보 UI 프리팹 추가",
+          "lines_changed": 4299,
+          "files_changed": 10
+        },
+        {
+          "hash": "3155ed1",
+          "message": "chore(Ammo): LoaderHUD 브랜치 AmmoRack 프리팹 _temp 보존",
+          "lines_changed": 3819,
+          "files_changed": 3
+        }
+      ],
+      "msg_descriptive_pct": 96,
+      "msg_short_count": 1,
+      "total": 119
+    },
+    "hot_files": [
+      {
+        "file": "03_Game.unity",
+        "path": "Assets/01_Project/00_Scenes/03_Game.unity",
+        "change_count": 24
+      },
+      {
+        "file": "ProjectSettings.asset",
+        "path": "ProjectSettings/ProjectSettings.asset",
+        "change_count": 24
+      },
+      {
+        "file": "AimController.cs",
+        "path": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/AimController.cs",
+        "change_count": 20
+      },
+      {
+        "file": "11_Temp_LJY.unity",
+        "path": "Assets/01_Project/00_Scenes/11_Temp_LJY.unity",
+        "change_count": 17
+      },
+      {
+        "file": "10_Temp_JWT.unity",
+        "path": "Assets/01_Project/00_Scenes/10_Temp_JWT.unity",
+        "change_count": 17
+      },
+      {
+        "file": "BarrelLoader.cs",
+        "path": "Assets/01_Project/01_Scripts/02_Tank/01_Loader/BarrelLoader.cs",
+        "change_count": 15
+      },
+      {
+        "file": "FireSystem.cs",
+        "path": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/FireSystem.cs",
+        "change_count": 15
+      },
+      {
+        "file": "00_Boot.unity",
+        "path": "Assets/01_Project/00_Scenes/00_Boot.unity",
+        "change_count": 14
+      },
+      {
+        "file": "TankStatus.cs",
+        "path": "Assets/01_Project/01_Scripts/02_Tank/TankStatus.cs",
+        "change_count": 14
+      },
+      {
+        "file": "AmmoPackDispenser.cs",
+        "path": "Assets/01_Project/01_Scripts/02_Tank/01_Loader/AmmoPackDispenser.cs",
+        "change_count": 10
+      }
+    ],
+    "file_path_map": {
+      "AmmoType.cs": "Assets/01_Project/01_Scripts/00_Core/AmmoType.cs",
+      "DamageInfo.cs": "Assets/01_Project/01_Scripts/00_Core/DamageInfo.cs",
+      "GameConst.cs": "Assets/01_Project/01_Scripts/00_Core/GameConst.cs",
+      "IDamageable.cs": "Assets/01_Project/01_Scripts/00_Core/IDamageable.cs",
+      "ISpawnPoint.cs": "Assets/01_Project/01_Scripts/00_Core/ISpawnPoint.cs",
+      "TankPart.cs": "Assets/01_Project/01_Scripts/00_Core/TankPart.cs",
+      "PlayerAvatarSpawner.cs": "Assets/01_Project/01_Scripts/01_Network/PlayerAvatarSpawner.cs",
+      "RoleSync.cs": "Assets/01_Project/01_Scripts/01_Network/RoleSync.cs",
+      "XRINetworkPlayer.cs": "Assets/01_Project/01_Scripts/01_Network/XRINetworkPlayer.cs",
+      "AmmoData.cs": "Assets/01_Project/01_Scripts/02_Tank/AmmoData.cs",
+      "CompassController.cs": "Assets/01_Project/01_Scripts/02_Tank/CompassController.cs",
+      "PooledProjectile.cs": "Assets/01_Project/01_Scripts/02_Tank/PooledProjectile.cs",
+      "ProjectilePoolManager.cs": "Assets/01_Project/01_Scripts/02_Tank/ProjectilePoolManager.cs",
+      "ProjectileType.cs": "Assets/01_Project/01_Scripts/02_Tank/ProjectileType.cs",
+      "SplashDamageUtils.cs": "Assets/01_Project/01_Scripts/02_Tank/SplashDamageUtils.cs",
+      "TankPartCollider.cs": "Assets/01_Project/01_Scripts/02_Tank/TankPartCollider.cs",
+      "TankStatus.cs": "Assets/01_Project/01_Scripts/02_Tank/TankStatus.cs",
+      "AimController.cs": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/AimController.cs",
+      "BallisticCalc.cs": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/BallisticCalc.cs",
+      "FireSystem.cs": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/FireSystem.cs",
+      "GunnerHUDController.cs": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/GunnerHUDController.cs",
+      "ImpactVFXHandler.cs": "Assets/01_Project/01_Scripts/02_Tank/00_Gunner/ImpactVFXHandler.cs",
+      "AmmoPack.cs": "Assets/01_Project/01_Scripts/02_Tank/01_Loader/AmmoPack.cs",
+      "AmmoPackDispenser.cs": "Assets/01_Project/01_Scripts/02_Tank/01_Loader/AmmoPackDispenser.cs",
+      "BarrelLoader.cs": "Assets/01_Project/01_Scripts/02_Tank/01_Loader/BarrelLoader.cs",
+      "CameraSwitcher.cs": "Assets/01_Project/01_Scripts/02_Tank/02_Driver/CameraSwitcher.cs",
+      "DriverAvatar.cs": "Assets/01_Project/01_Scripts/02_Tank/02_Driver/DriverAvatar.cs",
+      "TankDriver.cs": "Assets/01_Project/01_Scripts/02_Tank/02_Driver/TankDriver.cs",
+      "TankRepairUI.cs": "Assets/01_Project/01_Scripts/02_Tank/03_Repair/TankRepairUI.cs",
+      "EnemyBase.cs": "Assets/01_Project/01_Scripts/03_Enemy/EnemyBase.cs",
+      "EnemyDeathHandler.cs": "Assets/01_Project/01_Scripts/03_Enemy/EnemyDeathHandler.cs",
+      "EnemyInfantry.cs": "Assets/01_Project/01_Scripts/03_Enemy/EnemyInfantry.cs",
+      "EnemyLightVehicle.cs": "Assets/01_Project/01_Scripts/03_Enemy/EnemyLightVehicle.cs",
+      "EnemyTank.cs": "Assets/01_Project/01_Scripts/03_Enemy/EnemyTank.cs",
+      "EnemyVFXHandler.cs": "Assets/01_Project/01_Scripts/03_Enemy/EnemyVFXHandler.cs",
+      "WaveManager.cs": "Assets/01_Project/01_Scripts/03_Enemy/WaveManager.cs",
+      "AnnihilationGameMode.cs": "Assets/01_Project/01_Scripts/04_Gameplay/AnnihilationGameMode.cs",
+      "AmmoPackInfoDisplay.cs": "Assets/01_Project/01_Scripts/05_UI/AmmoPackInfoDisplay.cs",
+      "AuthUI.cs": "Assets/01_Project/01_Scripts/05_UI/AuthUI.cs",
+      "DriverHUDController.cs": "Assets/01_Project/01_Scripts/05_UI/DriverHUDController.cs",
+      "GameModeSelectUI.cs": "Assets/01_Project/01_Scripts/05_UI/GameModeSelectUI.cs",
+      "GameResultManager.cs": "Assets/01_Project/01_Scripts/05_UI/GameResultManager.cs",
+      "GameResultUI.cs": "Assets/01_Project/01_Scripts/05_UI/GameResultUI.cs",
+      "HUDAlwaysOnTop.cs": "Assets/01_Project/01_Scripts/05_UI/HUDAlwaysOnTop.cs",
+      "HUDFollower.cs": "Assets/01_Project/01_Scripts/05_UI/HUDFollower.cs",
+      "LobbiesUI.cs": "Assets/01_Project/01_Scripts/05_UI/LobbiesUI.cs",
+      "LocalHUDManager.cs": "Assets/01_Project/01_Scripts/05_UI/LocalHUDManager.cs",
+      "RawImageEdgeFade.cs": "Assets/01_Project/01_Scripts/05_UI/RawImageEdgeFade.cs",
+      "SharedHUDController.cs": "Assets/01_Project/01_Scripts/05_UI/SharedHUDController.cs",
+      "StationMapUI.cs": "Assets/01_Project/01_Scripts/05_UI/StationMapUI.cs",
+      "GameManager.cs": "Assets/01_Project/01_Scripts/06_Systems/GameManager.cs",
+      "GameMode.cs": "Assets/01_Project/01_Scripts/06_Systems/GameMode.cs",
+      "PlayerSpawnPoint.cs": "Assets/01_Project/01_Scripts/06_Systems/PlayerSpawnPoint.cs",
+      "PlayerTeleporter.cs": "Assets/01_Project/01_Scripts/06_Systems/PlayerTeleporter.cs",
+      "SessionBlackboard.cs": "Assets/01_Project/01_Scripts/06_Systems/SessionBlackboard.cs",
+      "XRLocomotionSceneController.cs": "Assets/01_Project/01_Scripts/06_Systems/XRLocomotionSceneController.cs"
+    }
+  },
+  "Just-simulation": {
+    "project": {
+      "name": "Just-simulation",
+      "dir": "Project_Just-simulation",
+      "repo": "Project_Just-simulation",
+      "description": "VR 파괴 시뮬레이터",
+      "platform": "OpenXR",
+      "primary_branch": "main",
+      "expected_systems": [
+        "GameManager",
+        "BatSwing",
+        "Weapon",
+        "FractureSystem",
+        "ScoreManager",
+        "UIManager",
+        "VRInteraction",
+        "StageLoader",
+        "AudioManager",
+        "DestructionPhysics"
+      ]
+    },
+    "git": {
+      "total_commits": 71,
+      "contributors": [
+        {
+          "name": "verpivia-1",
+          "commits": 47,
+          "last_date": "2026-03-30",
+          "days_inactive": 0
+        },
+        {
+          "name": "김연준",
+          "commits": 16,
+          "last_date": "2026-03-30",
+          "days_inactive": 0
+        },
+        {
+          "name": "yuno3384",
+          "commits": 2,
+          "last_date": "2026-03-23",
+          "days_inactive": 6
+        }
+      ],
+      "branches": [
+        {
+          "name": "origin/Test/UI_Archetectures",
+          "ahead": 2,
+          "behind": 67,
+          "last_activity": "2026-03-23"
+        },
+        {
+          "name": "(HEAD detached at origin/main)",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "N/A"
+        },
+        {
+          "name": "main",
+          "ahead": 0,
+          "behind": 18,
+          "last_activity": "2026-03-25"
+        },
+        {
+          "name": "origin",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "2026-03-30"
+        },
+        {
+          "name": "origin/Test/New-Map",
+          "ahead": 0,
+          "behind": 24,
+          "last_activity": "2026-03-30"
+        },
+        {
+          "name": "origin/Test/New-UISystem-Design",
+          "ahead": 0,
+          "behind": 0,
+          "last_activity": "2026-03-30"
+        }
+      ],
+      "last_commit_date": "2026-03-30",
+      "last_commit_msg": "Fix/JsonParsing",
+      "recent_commits": [
+        {
+          "hash": "790c961",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix/JsonParsing"
+        },
+        {
+          "hash": "92e551c",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)ChangeREADME"
+        },
+        {
+          "hash": "69be8fd",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix/ProjectSettingfix"
+        },
+        {
+          "hash": "1c97a20",
+          "author": "김연준",
+          "date": "2026-03-30",
+          "message": "체스맵 빛 수정"
+        },
+        {
+          "hash": "7f43fc5",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)SimpleBugFix"
+        },
+        {
+          "hash": "a6149af",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)FakeScore-CountlessBug"
+        },
+        {
+          "hash": "f043f5c",
+          "author": "김연준",
+          "date": "2026-03-30",
+          "message": "튜토리얼 맵 빛 설정"
+        },
+        {
+          "hash": "2fe31eb",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)HardCoding-Optimization"
+        },
+        {
+          "hash": "38e8af9",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)Scripts-Missing errer"
+        },
+        {
+          "hash": "e6cf0d5",
+          "author": "김연준",
+          "date": "2026-03-30",
+          "message": "오피스 맵 1 빛 2차 수정"
+        },
+        {
+          "hash": "e2148eb",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)Scripts-Optimization"
+        },
+        {
+          "hash": "3cf30b9",
+          "author": "김연준",
+          "date": "2026-03-30",
+          "message": "오피스 맵 1 빛 작업"
+        },
+        {
+          "hash": "cb57976",
+          "author": "verpivia-1",
+          "date": "2026-03-30",
+          "message": "Fix)FractureEditer-BugFix"
+        },
+        {
+          "hash": "bf36f01",
+          "author": "verpivia-1",
+          "date": "2026-03-26",
+          "message": "Fix/UI-Bug-fix"
+        },
+        {
+          "hash": "4a5227e",
+          "author": "verpivia-1",
+          "date": "2026-03-26",
+          "message": "Fix/UI-Button-Bug-fix"
+        }
+      ],
+      "commits_per_week": 39,
+      "primary_branch": "main",
+      "days_since_last_commit": 0,
+      "weekly_trend": [
+        0,
+        6,
+        26,
+        39
+      ],
+      "unmerged_branches": 1
+    },
+    "claude": {
+      "progress_pct": 72,
+      "phases": {
+        "foundation": {
+          "score": 4,
+          "reason": "OpenXR 기반 프로젝트 세팅이 잘 되어 있음. XR Interaction Toolkit 샘플(Hands, StarterAssets, InteractionSimulator) 포함, URP 렌더링 파이프라인 구성, Assembly Definition 4개(UI_Core, UI_Model, UI_Presenter 등)로 모듈화. ProjectSettings 존재. .gitignore에 csproj가 빠져있어 핫파일 상위 10개가 전부 csproj인 점이 아쉬움."
+        },
+        "core_systems": {
+          "score": 22,
+          "reason": "구현된 핵심 시스템: (1) FractureSystem - OpenFracture 기반으로 Fracture.cs, Fragmenter.cs, MeshSlicer.cs 등 메시 분할 알고리즘이 완전 구현되어 있고, Prefracture/Refracture/Slice 3가지 모드 지원. (2) Weapon.cs - 속도 기반 충돌 감지 + OverlapBox로 주변 오브젝트 물리 해제 로직이 실동작 코드. (3) BreakableHealth - HP 시스템 + 쉐이크 이펙트 + Fracture 연동 완성. (4) ThrowableBreakable - XRGrabInteractable 연동 던지기+파괴 시스템. (5) ScoreManager - Score/RealScore 이중 점수 체계 + 이벤트 기반 구독. (6) GameManager - 스테이지별 클리어 조건 + 씬 전환 시 자동 리바인드. (7) UIManager - MVP 패턴 기반 이벤트 허브. (8) AudioManager - BGM 씬별 자동 전환 + 효과음 PlayOneShot. (9) FragmentCleaner - 프래그먼트 메모리 관리. BatSwing은 명시적 클래스는 없지만 Weapon.cs가 그 역할을 수행. VRInteraction은 XRGrabInteractable 설정으로 구현됨. DestructionPhysics는 ThrowableBreakable + SuperStabilizeRoutine으로 구현."
+        },
+        "integration": {
+          "score": 20,
+          "reason": "시스템 간 연결이 잘 되어 있음. Weapon → BreakableHealth.TakeDamage() → Fracture.CauseFracture() → CallbackOptions.onCompleted → WeaponScoreAdder → ScoreManager.TriggerAddScore() → OnScoreChanged 이벤트 → ScoreDisplay UI 갱신의 전체 게임 루프가 코드로 확인됨. GameManager가 ScoreManager.OnRealScoreChanged를 구독하여 클리어 조건 체크 후 OnStageClear 이벤트 발행. NextStageButton이 이를 받아 다음 씬 로드(Office1→Office2→Office3→EndingPopup). BGMEvent가 씬 이름으로 BGM 매핑(Tutorial/Office1~3). 다만 StageLoader가 독립 시스템으로 분리되지 않고 NextStageButton과 GotoEvent에 하드코딩되어 있음. Tutorial→Office1 진입 경로가 GotoEvent의 'Office{key}' 문자열 조합으로만 동작."
+        },
+        "content": {
+          "score": 10,
+          "reason": "에셋이 상당히 갖춰져 있음. BGM 8개(Resources/BGM), 효과음 11개(EffectSound/Hit 6개 + EffectSound 5개), 프리팹 191개(오피스 가구, 체스셋, 무기, 스켈레톤 캐릭터, UI 요소 등), FBX 모델 25개, 머티리얼 31개, 텍스처 28개. 씬 4개 구성(Tutorial, Office1, Office2, Office3). SoundData.json과 StageData.json으로 데이터 드리븐 구조. 오디오 9개 파일이 코드에서 Resources.Load로 실제 사용됨. 애니메이션은 2개로 다소 부족."
+        },
+        "polish": {
+          "score": 10,
+          "reason": "UI 시스템이 MVP 아키텍처로 체계적으로 구현됨(Model: Event 클래스들, Presenter: 버튼 핸들러들). 네임스페이스 사용(VRProject.UI.Model, VRProject.UI.Presentation, VRProject.UI.Core). null 체크가 대부분 잘 되어 있음(ScoreManager.Instance null 체크, AudioManager null 체크 등). JSON 기반 데이터 로드(SoundData, StageData)로 하드코딩 최소화. EndingPopup으로 게임 종료 처리 구현. 볼륨 슬라이더(BGM/Effect) 구현. 다만 저장/로드 시스템 없음, 에러 핸들링이 Debug.Log 수준, clearMessage에 부적절한 문자열 포함."
+        }
+      },
+      "found_systems": [
+        "GameManager",
+        "Weapon (BatSwing 역할 포함)",
+        "FractureSystem (Fracture, Fragmenter, MeshSlicer, Prefracture, Slice)",
+        "ScoreManager",
+        "UIManager",
+        "AudioManager",
+        "DestructionPhysics (ThrowableBreakable, BreakableHealth, FragmentCleaner)",
+        "VRInteraction (XRGrabInteractable 기반 ThrowableBreakable)",
+        "StageLoader (NextStageButton, GotoEvent로 분산 구현)"
+      ],
+      "missing_systems": [
+        "BatSwing (독립 클래스 없음, Weapon.cs가 대체)"
+      ],
+      "scores": {
+        "code": 7,
+        "code_reason": "코드 품질이 학생 프로젝트 치고 높은 수준. Weapon.cs는 TryGetComponent 사용, 속도 계산을 FixedUpdate에서 수행하는 등 올바른 물리 처리. WeaponScoreAdder.cs의 콜백 등록/해제 패턴과 HashSet 중복 방지가 인상적. 다만 CallbackOptions 생성자에서 onCompleted = null로 초기화하여 WeaponScoreAdder에서 null 체크가 필요한 설계 결함이 있고, ThrowableBreakable의 OnGrab/OnRelease가 둘 다 SetPhysics(false)를 호출하는 버그가 존재.",
+        "architecture": 7,
+        "architecture_reason": "MVP 패턴을 UI 전반에 적용(Model: Event 클래스, Presenter: 버튼/디스플레이 클래스)하고, 네임스페이스로 레이어 분리(Core/Model/Presentation). Singleton + Observer 패턴으로 매니저 간 통신. Assembly Definition으로 컴파일 단위 분리 시도. 다만 GotoEvent에서 씬 이름을 'Office{key}'로 하드코딩한 점, StageData/SoundData를 매번 new로 생성하여 JSON 파싱을 반복하는 비효율이 있음.",
+        "overall": 7
+      },
+      "code_review": [
+        {
+          "file": "Weapon.cs",
+          "verdict": "good",
+          "comment": "속도 기반 충돌 감지가 올바르게 구현됨. FixedUpdate에서 velocity를 직접 계산하고, OnCollisionEnter에서 minVelocityThreshold로 필터링. TryGetComponent 패턴 사용이 좋고, BreakableHealth와 Fracture 양쪽 경로를 모두 처리. OverlapBox로 주변 오브젝트 물리 해제하는 ReleaseNearbyObjects()도 잘 설계됨. OnDrawGizmosSelected로 디버깅 지원."
+        },
+        {
+          "file": "GameManager.cs",
+          "verdict": "good",
+          "comment": "Singleton + DontDestroyOnLoad 패턴이 올바르게 구현됨. _clearScoreMap 딕셔너리로 씬별 클리어 조건을 효율적으로 관리하고, _defaultClearScores 폴백까지 준비. SceneManager.sceneLoaded 이벤트 구독/해제가 OnEnable/OnDisable에서 올바르게 처리됨. _clearedThisStage로 중복 클리어 방지. 다만 clearMessage = 'FUCK...How do you find out...'은 발표용으로 부적절."
+        },
+        {
+          "file": "ThrowableBreakable.cs",
+          "verdict": "needs_work",
+          "comment": "XR Grab → 던지기 → 충돌 파괴 흐름이 잘 구현됨. SuperStabilizeRoutine의 3단계 안정화(정지→재활성화→파괴)가 독창적. 그러나 치명적 버그: OnGrab과 OnRelease가 둘 다 SetPhysics(false)를 호출함(41~42줄). OnGrab은 SetPhysics(true)여야 잡을 때 kinematic이 되고, OnRelease에서 false로 물리 활성화되어야 함. 현재는 잡아도 물리가 비활성화되지 않아 의도와 다르게 동작할 수 있음."
+        },
+        {
+          "file": "WeaponScoreAdder.cs",
+          "verdict": "good",
+          "comment": "Fracture의 onCompleted 콜백에 동적으로 점수 추가 리스너를 등록하는 패턴이 잘 설계됨. HashSet으로 중복 등록 방지, 콜백 내에서 자기 자신을 RemoveListener하여 메모리 누수 방지. 'Real' 태그로 진짜 점수와 가짜 점수를 구분하는 게임 디자인 반영. onCompleted null 체크도 적절."
+        },
+        {
+          "file": "ScoreManager.cs",
+          "verdict": "good",
+          "comment": "Score/RealScore 이중 점수 체계가 깔끔하게 구현됨. ScoreEvent를 내부 데이터 모델로 분리하고, Action<int> 이벤트로 외부 통신. 씬 로드 시 자동 리셋(OnSceneLoaded). 단순하지만 목적에 맞게 잘 동작하는 설계."
+        },
+        {
+          "file": "BGMEvent.cs",
+          "verdict": "needs_work",
+          "comment": "씬별 BGM 매핑과 Resources.Load 캐싱이 잘 구현됨. 그러나 GetIndexForScene()에서 씬 이름을 switch 하드코딩으로 매핑하고 있어, 새 스테이지 추가 시 코드 수정 필요. SoundData.json의 bgmSounds 배열 순서에 의존하는 암묵적 계약이 위험. 씬 이름과 인덱스의 매핑을 JSON에 포함시키는 것이 더 안전."
+        },
+        {
+          "file": "StageButtonInfo.cs",
+          "verdict": "needs_work",
+          "comment": "매번 Start()에서 new StageData()를 호출하여 JSON 파싱을 반복 수행. 버튼이 여러 개면 같은 JSON을 여러 번 파싱하는 비효율. 또한 gameObject.tag를 'st1', 'st2' 형식으로 매칭하는 방식은 Unity 태그 시스템의 오용. SerializeField로 stageId를 직접 설정하는 것이 더 명확."
+        },
+        {
+          "file": "FragmentCleaner.cs",
+          "verdict": "good",
+          "comment": "static Queue로 전역 프래그먼트 관리 + maxFragmentRoots 하드 캡 + lifeTime 기반 자동 정리가 깔끔하게 구현됨. VR 환경에서 프래그먼트 과다 생성으로 인한 성능 저하를 효과적으로 방지. null 체크도 적절."
+        }
+      ],
+      "code_issues": [
+        {
+          "file": "ThrowableBreakable.cs",
+          "description": "41~42줄: OnGrab과 OnRelease가 둘 다 SetPhysics(false)를 호출. OnGrab은 잡았을 때 kinematic으로 만들어야 하므로 SetPhysics(true)여야 함. 현재 코드는 잡아도 물리 상태가 변하지 않아 XR 그랩 동작이 의도와 다를 수 있음.",
+          "severity": "high"
+        },
+        {
+          "file": "GameManager.cs",
+          "description": "31줄: clearMessage = 'FUCK...How do you find out...' — 학생 프로젝트 발표에서 부적절한 문구. 교수/심사위원 앞에서 게임 클리어 시 화면에 표시됨.",
+          "severity": "high"
+        },
+        {
+          "file": "CallbackOptions.cs",
+          "description": "18줄: 생성자에서 onCompleted = null로 초기화. Unity의 UnityEvent는 기본적으로 new UnityEvent()로 초기화되어야 Inspector에서 사용 가능. null 초기화로 인해 WeaponScoreAdder에서 매번 null 체크가 필요하고, Inspector에서 콜백 미설정 시 NullReferenceException 위험.",
+          "severity": "medium"
+        },
+        {
+          "file": "StageButtonInfo.cs",
+          "description": "15줄: Start()에서 매번 new StageData()를 호출하여 Resources.Load + JSON 파싱을 반복 수행. 스테이지 선택 화면에 버튼이 3개면 같은 JSON을 3번 파싱. static 캐싱이나 ScriptableObject 사용 권장.",
+          "severity": "medium"
+        },
+        {
+          "file": "BGMEvent.cs",
+          "description": "46~53줄: GetIndexForScene()에서 씬 이름→인덱스 매핑이 하드코딩. 새 씬 추가 시 코드 수정 필요하며, SoundData.json의 bgmSounds 배열 순서 변경 시 잘못된 BGM이 재생됨. JSON에 씬 이름-클립 매핑을 직접 포함시키는 것이 안전.",
+          "severity": "medium"
+        },
+        {
+          "file": "Popup.cs",
+          "description": "1줄: 'using Unity;' — 잘못된 네임스페이스 import. 'using UnityEngine;'이 이미 있으므로 불필요하며, Unity 버전에 따라 컴파일 에러를 유발할 수 있음.",
+          "severity": "medium"
+        },
+        {
+          "file": "EscapeEvent.cs",
+          "description": "1줄: 'using Unity;' — Popup.cs와 동일한 문제. 불필요한 네임스페이스 import.",
+          "severity": "low"
+        },
+        {
+          "file": "UnfreezeFragment.cs",
+          "description": "51줄: tagAllowed 변수를 선언하고 사용하지 않음. 52줄에서 triggerOptions.IsTagAllowed()를 다시 호출. 사소한 비효율이지만 코드 리뷰에서 발견 가능한 실수.",
+          "severity": "low"
+        },
+        {
+          "file": "NextStageButton.cs",
+          "description": "11~14줄: _nextSceneMap에 Office3의 다음 씬이 정의되지 않아 Office3에서는 EndingPopup 분기로 처리. 이 로직 자체는 동작하지만, 하드코딩된 씬 이름 매핑이 GotoEvent, BGMEvent, GameManager 등 여러 곳에 분산되어 있어 유지보수 위험.",
+          "severity": "medium"
+        },
+        {
+          "file": "PlaneSlicer.cs",
+          "description": "11줄: collider.gameObject.GetComponent<MeshRenderer>().material에서 MeshRenderer가 없는 오브젝트와 충돌 시 NullReferenceException 발생. null 체크 필요.",
+          "severity": "medium"
+        }
+      ],
+      "risks": [
+        {
+          "level": "high",
+          "title": "ThrowableBreakable의 OnGrab/OnRelease 물리 버그",
+          "why": "OnGrab과 OnRelease 모두 SetPhysics(false)를 호출하여, VR에서 물건을 잡았을 때 kinematic으로 전환되지 않음. XR Interaction Toolkit의 VelocityTracking 모드에서는 큰 문제가 아닐 수 있지만, 잡은 물체가 다른 물체와 충돌하여 의도치 않은 파괴가 발생할 수 있음.",
+          "steps": [
+            "OnGrab의 SetPhysics(false)를 SetPhysics(true)로 수정",
+            "VR에서 물건 잡기→던지기→파괴 시퀀스를 테스트"
+          ]
+        },
+        {
+          "level": "high",
+          "title": "발표용 부적절한 문자열",
+          "why": "GameManager.cs의 clearMessage와 TextName('....')이 발표/심사에서 노출됨. 'FUCK'이 포함된 클리어 메시지는 학점에 부정적 영향을 줄 수 있음.",
+          "steps": [
+            "clearMessage를 한국어 적절한 문구로 변경 (예: '클리어! 숨겨진 점수를 발견했습니다!')",
+            "TextName 상수도 의미 있는 이름으로 수정"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "씬 이름 하드코딩 분산",
+          "why": "'Office1', 'Office2', 'Office3', 'Tutorial' 문자열이 GameManager, NextStageButton, GotoEvent, BGMEvent 등 최소 5개 파일에 분산 하드코딩. 씬 이름 변경 시 연쇄 버그 발생 위험.",
+          "steps": [
+            "static class에 씬 이름 상수를 정의하거나 ScriptableObject로 씬 목록 관리",
+            "기존 하드코딩을 상수 참조로 교체"
+          ]
+        },
+        {
+          "level": "medium",
+          "title": "CallbackOptions.onCompleted null 초기화",
+          "why": "Fracture의 CallbackOptions 생성자가 onCompleted를 null로 설정. Inspector에서 콜백을 설정하지 않은 Fracture 오브젝트에 WeaponScoreAdder가 점수를 등록하려 하면 경고만 출력되고 점수가 안 올라감. 발표 시 '부수었는데 점수가 안 오르는' 상황 발생 가능.",
+          "steps": [
+            "CallbackOptions 생성자에서 onCompleted = new UnityEvent()로 변경",
+            "또는 WeaponScoreAdder에서 null일 때 자동 초기화 로직 추가"
+          ]
+        },
+        {
+          "level": "low",
+          "title": "using Unity; 컴파일 경고/에러 가능성",
+          "why": "Popup.cs와 EscapeEvent.cs에서 'using Unity;'를 사용. 일부 Unity 버전에서 이 네임스페이스가 존재하지 않아 컴파일 에러 발생 가능.",
+          "steps": [
+            "해당 줄을 삭제하거나 'using UnityEngine;'으로 교체"
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "title": "씬 이름 및 스테이지 설정 중앙화",
+          "why": "현재 씬 이름이 5개 이상의 파일에 분산 하드코딩되어 있어, 씬 추가/이름 변경 시 버그 발생 확률이 높음. 발표 직전 긴급 수정 시 실수 위험.",
+          "steps": [
+            "ScriptableObject 또는 static class로 씬 이름 상수 정의",
+            "GameManager의 stageClearConditions를 기준으로 다른 클래스들이 참조하도록 변경",
+            "NextStageButton._nextSceneMap과 BGMEvent.GetIndexForScene을 데이터 드리븐으로 전환"
+          ]
+        },
+        {
+          "title": "ThrowableBreakable 물리 버그 수정 및 발표 문자열 정리",
+          "why": "두 가지 모두 발표 당일에 눈에 띄는 문제. 물리 버그는 데모 시 예측 불가한 동작을, 부적절한 문자열은 심사위원에게 부정적 인상을 줄 수 있음.",
+          "steps": [
+            "ThrowableBreakable.OnGrab을 SetPhysics(true)로 수정",
+            "GameManager.clearMessage를 적절한 한국어로 변경",
+            "VR에서 잡기→던지기→파괴→점수 증가 전체 플로우를 테스트"
+          ]
+        },
+        {
+          "title": "StageData/SoundData JSON 파싱 최적화",
+          "why": "StageButtonInfo.Start()에서 매번 new StageData()를 호출하여 JSON을 중복 파싱. VR 환경에서 불필요한 GC 압력을 유발하여 프레임 드랍 가능.",
+          "steps": [
+            "StageData와 SoundData를 static 캐싱 패턴으로 변경 (한 번만 로드)",
+            "또는 ScriptableObject로 전환하여 에디터에서 미리 로드"
+          ]
+        }
+      ],
+      "commit_analysis": "최근 커밋 패턴은 매우 활발함(주당 39건). verpivia-1이 전체 71건 중 47건(66%)으로 핵심 개발자이며, 김연준은 맵 라이팅 작업에 집중(16건), yuno3384는 6일 전 마지막 활동으로 비활성 상태. 커밋 메시지는 'Fix)FakeScore-CountlessBug', 'Fix)HardCoding-Optimization' 등 Fix 접두사를 일관되게 사용하지만, 구체적으로 무엇을 고쳤는지 알기 어려운 경우가 많음. 3월 30일 당일 13건의 커밋이 집중되어 있어 마감 직전 대량 수정 패턴. 대형 커밋(4843줄 BGM Controller, 4182줄 맵 RigidBody 설정)이 있어 코드 리뷰 없이 대규모 변경이 이루어졌음을 시사.",
+      "architecture_notes": "UI 시스템에 MVP(Model-View-Presenter) 패턴을 체계적으로 적용한 점이 학생 프로젝트로서 돋보임. Model 레이어(Event 클래스들: ScoreEvent, BGMEvent, VolumeEvent 등)가 순수 C# 클래스로 구현되어 MonoBehaviour 의존성 없이 로직을 캡슐화하고, Presenter 레이어(ScoreDisplay, BGMPlayer, WeaponScoreAdder 등)가 Unity 컴포넌트로서 View와 Model을 연결. Singleton + Observer 패턴으로 매니저 간 통신(ScoreManager → GameManager → NextStageButton). OpenFracture 라이브러리를 적극 활용하되 BreakableHealth, ThrowableBreakable, FragmentCleaner 등 커스텀 래퍼를 추가하여 VR 특화 요구사항에 맞춤. 다만 씬 이름 등 설정값이 여러 클래스에 분산 하드코딩되어 있고, StageData/SoundData를 매번 new 생성하는 비효율이 아키텍처 수준의 개선 포인트.",
+      "project_narrative": "이 팀은 VR 파괴 시뮬레이터를 만들고 있으며, 현재 핵심 게임플레이 루프(무기로 오브젝트 타격 → HP 감소/직접 파괴 → 프래그먼트 생성 → 점수 증가 → 클리어 조건 체크 → 다음 스테이지 이동)가 완성되어 있다. OpenFracture 기반의 메시 분할 시스템, XR Grab/Throw 연동의 ThrowableBreakable, 이중 점수 체계(가짜 점수/진짜 점수)라는 독특한 게임 디자인, 4개 스테이지(Tutorial, Office1~3), BGM/효과음 시스템, 볼륨 조절 UI까지 구현되어 프로토타입 시연이 가능한 수준이다. UI 아키텍처가 MVP 패턴으로 체계적이고, 네임스페이스와 Assembly Definition으로 모듈 분리도 시도했다. 가장 시급한 것은 ThrowableBreakable의 OnGrab 물리 버그 수정, 발표용 부적절한 문자열(clearMessage) 교체, 그리고 CallbackOptions.onCompleted null 초기화로 인해 일부 오브젝트 파괴 시 점수가 안 올라갈 수 있는 문제 해결이다."
+    },
+    "file_counts": {
+      "cs": 76,
+      "unity": 14,
+      "prefab": 191,
+      "mat": 31,
+      "anim": 2,
+      "asset": 6,
+      "png_jpg": 28,
+      "asmdef": 4,
+      "audio": 9,
+      "fbx": 25,
+      "shader": 0
+    },
+    "commit_quality": {
+      "avg_lines": 847,
+      "median_lines": 187,
+      "oversized": [
+        {
+          "hash": "af595b6",
+          "message": "Feat/UI-BGM-Contriler",
+          "lines_changed": 4843,
+          "files_changed": 15
+        },
+        {
+          "hash": "4b770aa",
+          "message": "맵 바닥, 벽 RigidBody 설정",
+          "lines_changed": 4182,
+          "files_changed": 2
+        },
+        {
+          "hash": "90541d0",
+          "message": "Feat/GameManager",
+          "lines_changed": 4180,
+          "files_changed": 20
+        },
+        {
+          "hash": "02adfdf",
+          "message": "Test/UI-Sample",
+          "lines_changed": 2863,
+          "files_changed": 37
+        },
+        {
+          "hash": "a66d087",
+          "message": "Test/UI-TMP-Set",
+          "lines_changed": 2625,
+          "files_changed": 37
+        }
+      ],
+      "msg_descriptive_pct": 78,
+      "msg_short_count": 2,
+      "total": 65
+    },
+    "hot_files": [
+      {
+        "file": "UI_Model.csproj",
+        "path": "UI_Model.csproj",
+        "change_count": 23
+      },
+      {
+        "file": "Assembly-CSharp.csproj",
+        "path": "Assembly-CSharp.csproj",
+        "change_count": 21
+      },
+      {
+        "file": "UI_Core.csproj",
+        "path": "UI_Core.csproj",
+        "change_count": 20
+      },
+      {
+        "file": "Unity.XR.Hands.Samples.VisualizerSample.csproj",
+        "path": "Unity.XR.Hands.Samples.VisualizerSample.csproj",
+        "change_count": 20
+      },
+      {
+        "file": "Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj",
+        "path": "Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj",
+        "change_count": 20
+      },
+      {
+        "file": "Unity.XR.Interaction.Toolkit.Samples.Hands.csproj",
+        "path": "Unity.XR.Interaction.Toolkit.Samples.Hands.csproj",
+        "change_count": 20
+      },
+      {
+        "file": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj",
+        "path": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj",
+        "change_count": 20
+      },
+      {
+        "file": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+        "path": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj",
+        "change_count": 20
+      },
+      {
+        "file": "OpenFracture.Editor.csproj",
+        "path": "OpenFracture.Editor.csproj",
+        "change_count": 19
+      },
+      {
+        "file": "Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj",
+        "path": "Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj",
+        "change_count": 19
+      }
+    ],
+    "file_path_map": {
+      "AssemblyInfo.cs": "Assets/Scripts/Fracture/AssemblyInfo.cs",
+      "Fracture.cs": "Assets/Scripts/Fracture/Fracture.cs",
+      "FragmentCleaner.cs": "Assets/Scripts/Fracture/FragmentCleaner.cs",
+      "Prefracture.cs": "Assets/Scripts/Fracture/Prefracture.cs",
+      "Slice.cs": "Assets/Scripts/Fracture/Slice.cs",
+      "ConstrainedTriangulator.cs": "Assets/Scripts/Fracture/Fragment/ConstrainedTriangulator.cs",
+      "EdgeConstraint.cs": "Assets/Scripts/Fracture/Fragment/EdgeConstraint.cs",
+      "FragmentData.cs": "Assets/Scripts/Fracture/Fragment/FragmentData.cs",
+      "Fragmenter.cs": "Assets/Scripts/Fracture/Fragment/Fragmenter.cs",
+      "MeshSlicer.cs": "Assets/Scripts/Fracture/Fragment/MeshSlicer.cs",
+      "MeshVertex.cs": "Assets/Scripts/Fracture/Fragment/MeshVertex.cs",
+      "Quad.cs": "Assets/Scripts/Fracture/Fragment/Quad.cs",
+      "TriangulationPoint.cs": "Assets/Scripts/Fracture/Fragment/TriangulationPoint.cs",
+      "Triangulator.cs": "Assets/Scripts/Fracture/Fragment/Triangulator.cs",
+      "UnfreezeFragment.cs": "Assets/Scripts/Fracture/Fragment/UnfreezeFragment.cs",
+      "BreakableHealth.cs": "Assets/Scripts/Fracture/Model/BreakableHealth.cs",
+      "FractureFinalRunner.cs": "Assets/Scripts/Fracture/Model/FractureFinalRunner.cs",
+      "Weapon.cs": "Assets/Scripts/Fracture/Model/Weapon.cs",
+      "CallbackOptions.cs": "Assets/Scripts/Fracture/Options/CallbackOptions.cs",
+      "FractureOptions.cs": "Assets/Scripts/Fracture/Options/FractureOptions.cs",
+      "PrefractureOptions.cs": "Assets/Scripts/Fracture/Options/PrefractureOptions.cs",
+      "RefractureOptions.cs": "Assets/Scripts/Fracture/Options/RefractureOptions.cs",
+      "SliceOptions.cs": "Assets/Scripts/Fracture/Options/SliceOptions.cs",
+      "TriggerOptions.cs": "Assets/Scripts/Fracture/Options/TriggerOptions.cs",
+      "PlaneSlicer.cs": "Assets/Scripts/Fracture/Slicers/PlaneSlicer.cs",
+      "CameraController.cs": "Assets/Scripts/Fracture/Support/CameraController.cs",
+      "Projectile.cs": "Assets/Scripts/Fracture/Support/Projectile.cs",
+      "ToggleText.cs": "Assets/Scripts/Fracture/Support/ToggleText.cs",
+      "UniqueMaterial.cs": "Assets/Scripts/Fracture/Support/UniqueMaterial.cs",
+      "BinSort.cs": "Assets/Scripts/Fracture/Utilities/BinSort.cs",
+      "MathUtils.cs": "Assets/Scripts/Fracture/Utilities/MathUtils.cs",
+      "MeshUtils.cs": "Assets/Scripts/Fracture/Utilities/MeshUtils.cs",
+      "Vector3Extensions.cs": "Assets/Scripts/Fracture/Utilities/Vector3Extensions.cs",
+      "Utils.cs": "Assets/Scripts/UI/Core/Utils.cs",
+      "IGetUIType.cs": "Assets/Scripts/UI/Core/Interface/IGetUIType.cs",
+      "IInteractable.cs": "Assets/Scripts/UI/Core/Interface/IInteractable.cs",
+      "SoundData.cs": "Assets/Scripts/UI/Core/Sounddata/SoundData.cs",
+      "StageData.cs": "Assets/Scripts/UI/Core/Stagedata/StageData.cs",
+      "GotoButtonInfo.cs": "Assets/Scripts/UI/Model/ButtonInfo/LinkedButtonInfo/GotoButtonInfo.cs",
+      "LinkedButtonInfo.cs": "Assets/Scripts/UI/Model/ButtonInfo/LinkedButtonInfo/LinkedButtonInfo.cs",
+      "StageButtonInfo.cs": "Assets/Scripts/UI/Model/ButtonInfo/LinkedButtonInfo/StageButtonInfo.cs",
+      "SimplexButtonInfo.cs": "Assets/Scripts/UI/Model/ButtonInfo/SimplexButtonInfo/SimplexButtonInfo.cs",
+      "CanvasInfo.cs": "Assets/Scripts/UI/Model/CanvasInfo/CanvasInfo.cs",
+      "BGMEvent.cs": "Assets/Scripts/UI/Model/Event/BGMEvent.cs",
+      "CloseEvent.cs": "Assets/Scripts/UI/Model/Event/CloseEvent.cs",
+      "EscapeEvent.cs": "Assets/Scripts/UI/Model/Event/EscapeEvent.cs",
+      "FakeStartEvent.cs": "Assets/Scripts/UI/Model/Event/FakeStartEvent.cs",
+      "GotoEvent.cs": "Assets/Scripts/UI/Model/Event/GotoEvent.cs",
+      "HitSoundEvent.cs": "Assets/Scripts/UI/Model/Event/HitSoundEvent.cs",
+      "PopupEvent.cs": "Assets/Scripts/UI/Model/Event/PopupEvent.cs",
+      "ScoreEvent.cs": "Assets/Scripts/UI/Model/Event/ScoreEvent.cs",
+      "StagesetPopupEvent.cs": "Assets/Scripts/UI/Model/Event/StagesetPopupEvent.cs",
+      "VolumeEvent.cs": "Assets/Scripts/UI/Model/Event/VolumeEvent.cs",
+      "IOnclickLinkedButton.cs": "Assets/Scripts/UI/Model/Interface/IOnclickLinkedButton.cs",
+      "IOnclickSimplexButton.cs": "Assets/Scripts/UI/Model/Interface/IOnclickSimplexButton.cs",
+      "AudioManager.cs": "Assets/Scripts/UI/Model/Manager/AudioManager.cs",
+      "GameManager.cs": "Assets/Scripts/UI/Model/Manager/GameManager.cs",
+      "ScoreManager.cs": "Assets/Scripts/UI/Model/Manager/ScoreManager.cs",
+      "UIManager.cs": "Assets/Scripts/UI/Model/Manager/UIManager.cs",
+      "PanelInfo.cs": "Assets/Scripts/UI/Model/PanelInfo/PanelInfo.cs",
+      "TextInfo.cs": "Assets/Scripts/UI/Model/TextInfo/TextInfo.cs",
+      "RealScoreDisplay.cs": "Assets/Scripts/UI/Presenter/RealScoreDisplay.cs",
+      "ScoreDisplay.cs": "Assets/Scripts/UI/Presenter/ScoreDisplay.cs",
+      "BGMPlayer.cs": "Assets/Scripts/UI/Presenter/BGM/BGMPlayer.cs",
+      "BGMVolumeSlider.cs": "Assets/Scripts/UI/Presenter/BGM/BGMVolumeSlider.cs",
+      "EffectVolumeSlider.cs": "Assets/Scripts/UI/Presenter/BGM/EffectVolumeSlider.cs",
+      "Close.cs": "Assets/Scripts/UI/Presenter/onClicke/Close.cs",
+      "EndingPopup.cs": "Assets/Scripts/UI/Presenter/onClicke/EndingPopup.cs",
+      "Escape.cs": "Assets/Scripts/UI/Presenter/onClicke/Escape.cs",
+      "FakeStart.cs": "Assets/Scripts/UI/Presenter/onClicke/FakeStart.cs",
+      "Goto.cs": "Assets/Scripts/UI/Presenter/onClicke/Goto.cs",
+      "NextStageButton.cs": "Assets/Scripts/UI/Presenter/onClicke/NextStageButton.cs",
+      "Popup.cs": "Assets/Scripts/UI/Presenter/onClicke/Popup.cs",
+      "StagePopup.cs": "Assets/Scripts/UI/Presenter/onClicke/StagePopup.cs",
+      "WeaponHitSound.cs": "Assets/Scripts/UI/Presenter/Weapon/WeaponHitSound.cs",
+      "WeaponScoreAdder.cs": "Assets/Scripts/UI/Presenter/Weapon/WeaponScoreAdder.cs"
+    }
+  }
+}
