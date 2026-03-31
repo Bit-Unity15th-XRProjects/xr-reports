@@ -1,94 +1,94 @@
 [
   {
     "name": "AR_RPG",
-    "progress": 58,
+    "progress": 50,
     "scores": {
-      "code": 5,
-      "code_reason": "BattleManager.cs의 HP/XP 스케일링 로직(GetScaledMaxHp, GetScaledXpReward)과 MonsterSpawner의 확률 기반 스폰 시스템은 잘 구현됨. 그러나 BattleManager가 403줄로 전투 로직, 아이템 생성, UI 관리, 씬 전환을 모두 담당하여 단일 책임 원칙 위반. GetRewardItem()이 null만 반환하는 데드 코드, 필드 선언이 메서드 사이에 산재(hp, maxHp가 클래스 중간에 위치)하여 가독성 저하.",
-      "architecture": 5,
-      "architecture_reason": "Singleton 패턴(BattleManager.Instance, LevelManager.Instance, VictoryController.Instance)으로 주요 매니저 접근을 구현하였으나, Awake()에서 중복 체크 없이 Instance = this만 할당하여 씬 재로드 시 문제 가능. MonsterSpawner의 FieldPaused, FieldCameraRef 등 static 필드로 전역 상태 관리는 학생 프로젝트로서 실용적이나 결합도가 높음. BattleSelectionContext 정적 클래스로 씬 간 데이터 전달하는 구조는 적절함.",
-      "overall": 5
+      "code": 4,
+      "code_reason": "BattleManager의 GetScaledMaxHp(), MonsterSpawner의 UpdateProbabilityValues() 등 핵심 게임 로직은 올바르게 구현되어 있으나, Monster.cs의 ApplyVisualByGradeType()가 100줄 이상의 거대 메서드이고, GpsMapPlayerMover의 Start() 코루틴이 미완성 상태이며, MapGridGenerator.cs에 위도 오타(37→7) 같은 실제 크래시 유발 버그가 존재함. 전반적으로 null 체크 부족(LevelManager.Instance, ExpUIController.Instance 직접 참조)과 인코딩 깨짐 주석이 코드 가독성을 떨어뜨림.",
+      "architecture": 4,
+      "architecture_reason": "BattleManager, LevelManager, InventoryController, VictoryController 등 거의 모든 매니저가 Singleton 패턴을 사용하지만 DontDestroyOnLoad 없이 씬 로드 시 소멸 위험이 있음. 씬 간 데이터 전달에 BattleSelectionContext라는 정적 클래스를 사용하는데, 초기화 검증이 없어 타이밍 버그 가능성 존재. 네임스페이스를 ARRPG.Level, ARRPG.Inventory 등으로 분리한 것은 좋으나, 핵심 클래스들(BattleManager, Monster, MonsterSpawner)이 네임스페이스 없이 전역에 있어 일관성이 부족함.",
+      "overall": 4
     },
     "commits": 39,
     "contributors": 3,
-    "days_since_last_commit": 9,
+    "days_since_last_commit": 10,
     "issues": 10,
     "risks": 5,
     "weekly_trend": [
       0,
-      21,
-      18,
+      24,
+      15,
       0
     ],
-    "date": "2026-03-30"
+    "date": "2026-03-31"
   },
   {
     "name": "Dumb-ways-to-die",
-    "progress": 83,
+    "progress": 80,
     "scores": {
       "code": 8,
-      "code_reason": "VContainer DI, asmdef 모듈화, [Header]/[Tooltip] 어트리뷰트, 일관된 코루틴 패턴 등 학생 프로젝트로서는 매우 높은 코드 품질입니다. VRRigBuilder의 sticky 이벤트 패턴이나 HeadTrackingController의 리플렉션 기반 HandVisualizer 제어 등 고급 기법도 적절히 사용되었습니다. 다만 PlayerRespawnBound.ComputeBoundsFromRoomWalls()에서 FindObjectsByType<Transform>로 씬 전체 Transform을 순회하는 것은 성능 우려가 있고, 일부 파일(StageHapticPlayer 333줄)이 권장 길이를 초과합니다.",
+      "code_reason": "전반적으로 높은 코드 품질을 보인다. HarpoonGun의 실린더 명중 판정(IsInsideTunaCylinder), VRRigBuilder의 Sticky 이벤트 패턴, BaseDeathEffect의 URP Volume 단계별 제어 등 고급 기법이 정확하게 구현되어 있다. 다만 HarpoonGun.cs(550줄)과 UnderwaterParticles.cs(455줄)가 프로젝트 가이드라인(300줄)을 초과하며, 일부 VContainer DI 실패 시 null 참조 경로가 존재한다.",
       "architecture": 9,
-      "architecture_reason": "VContainer를 활용한 DI, 7개 asmdef으로 구성된 명확한 모듈 경계(Core→Gameplay→DeathEffects→DeathTriggers→Scope), 이벤트 기반 느슨한 결합(OnPlayerDeath, OnStageResultRecorded, 트리거별 정적 이벤트), Singleton+Observer+State Machine+Factory 패턴의 적절한 조합은 학생 프로젝트 수준을 크게 넘어섭니다. GameBootstrap의 자동 초기화 파이프라인과 DontDestroyOnLoad 영속 객체 관리가 특히 잘 설계되었습니다. 순환 의존이 없는 깨끗한 의존성 그래프는 실무에서도 모범적인 수준입니다.",
+      "architecture_reason": "Singleton + Observer(static event) + State Machine + DI(VContainer) 패턴을 적재적소에 사용하고 있다. GameBootstrap → VRRigBuilder → GameManager → VRCanvasAdapter 순서의 부트스트랩 체인이 깔끔하고, RuntimeInitializeOnLoadMethod로 씬 독립적 초기화를 구현했다. 클래스 간 결합도가 낮고 이벤트 기반으로 잘 분리되어 있으며, BaseDeathEffect 추상 클래스로 9개 사망 이펙트의 공통 로직을 효과적으로 추출했다.",
       "overall": 8
     },
-    "commits": 334,
+    "commits": 357,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 10,
     "risks": 5,
     "weekly_trend": [
       0,
-      60,
-      188,
-      86
+      91,
+      163,
+      103
     ],
-    "date": "2026-03-30"
+    "date": "2026-03-31"
   },
   {
     "name": "IronSarcophagus",
-    "progress": 78,
+    "progress": 71,
     "scores": {
       "code": 7,
-      "code_reason": "전반적으로 높은 품질의 코드. AimController의 클라이언트 예측 패턴(로컬 _localYaw/_localPitch + UpdateAimServerRpc delta 전송)은 Netcode 모범 사례를 잘 따름. EnemyTank의 인지도 시스템(CalculateExposure 5점 Linecast, 3단계 awareness rate)은 학생 프로젝트 수준을 상회하는 설계. 다만 EnemyTank.cs가 736줄로 권장의 2.4배이며 상태머신·전투·데미지·장갑을 하나에 담아 SRP를 위반하고, SharedHUDController.cs:409의 빈 catch 블록은 프로젝트 규칙 위반임.",
+      "code_reason": "대부분의 스크립트가 명확한 네임스페이스, SerializeField+Tooltip 어노테이션, 적절한 접근제한자를 사용하며 코드 가독성이 높음. EnemyTank.cs(736줄)는 파일 길이 권장치(300줄)를 크게 초과하고 AI 상태 메서드들이 지나치게 길어 분리가 필요. BallisticCalc.cs의 배열 슬라이싱(points[..(i+1)])이 매 시뮬레이션마다 새 배열을 할당하는 GC 부담, SharedHUDController의 미니맵 마커 미회수로 인한 메모리 누수가 주요 문제점.",
       "architecture": 8,
-      "architecture_reason": "서버 권위(Server Authority) 아키텍처가 일관되게 적용됨 — TankStatus.TakeDamageServerRpc, AimController.UpdateAimServerRpc, WaveManager의 서버 전용 스폰 등. Observer 패턴(OnLocalRoleChanged, OnFireRequested, OnAliveCountChanged)으로 시스템 간 결합도를 낮춤. GameManager의 상태머신 + 코루틴 씬 전환, AnnihilationGameMode의 static 이벤트 브릿지 패턴은 NetworkObject↔씬 UI 분리 문제를 실용적으로 해결. GameConst.cs로 상수 중앙화도 좋은 판단.",
+      "architecture_reason": "서버-권위(Server-Authoritative) 모델을 일관되게 적용하여 NetworkVariable은 Server WritePermission, 클라이언트는 ServerRpc로 요청하는 패턴이 잘 정립됨. IDamageable 인터페이스 기반 다형성으로 EnemyBase/EnemyTank/TankStatus가 동일한 데미지 파이프라인을 공유. RoleSync의 이벤트 기반 역할 변경 알림으로 HUD/입력 시스템의 결합도를 낮춤. 다만 RoleSync가 Singleton으로서 전역 상태를 관리하면서 여러 시스템이 직접 참조하는 점, EnemyTank 내부에 인식/전투/이동/포탑 로직이 모두 집중된 God Object 경향이 개선 여지.",
       "overall": 7
     },
-    "commits": 142,
+    "commits": 148,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 10,
     "risks": 5,
     "weekly_trend": [
       0,
+      50,
       38,
-      44,
       60
     ],
-    "date": "2026-03-30"
+    "date": "2026-03-31"
   },
   {
     "name": "Just-simulation",
-    "progress": 72,
+    "progress": 68,
     "scores": {
       "code": 7,
-      "code_reason": "코드 품질이 학생 프로젝트 치고 높은 수준. Weapon.cs는 TryGetComponent 사용, 속도 계산을 FixedUpdate에서 수행하는 등 올바른 물리 처리. WeaponScoreAdder.cs의 콜백 등록/해제 패턴과 HashSet 중복 방지가 인상적. 다만 CallbackOptions 생성자에서 onCompleted = null로 초기화하여 WeaponScoreAdder에서 null 체크가 필요한 설계 결함이 있고, ThrowableBreakable의 OnGrab/OnRelease가 둘 다 SetPhysics(false)를 호출하는 버그가 존재.",
+      "code_reason": "전반적으로 깔끔한 코드. ScoreManager, AudioManager, UIManager 등 Manager 클래스들이 일관된 Singleton 패턴과 이벤트 구독/해제 라이프사이클을 따름. WeaponScoreAdder에서 HashSet으로 중복 콜백 방지, BGMEvent에서 Dictionary 캐싱 등 실용적 최적화가 돋보임. 다만 Fragmenter.cs의 `using UnityEditor;`가 빌드 에러를 유발할 수 있고, ThrowableBreakable의 OnGrab/OnRelease가 동일 동작(SetPhysics(false))을 수행하는 것은 로직 오류로 의심됨.",
       "architecture": 7,
-      "architecture_reason": "MVP 패턴을 UI 전반에 적용(Model: Event 클래스, Presenter: 버튼/디스플레이 클래스)하고, 네임스페이스로 레이어 분리(Core/Model/Presentation). Singleton + Observer 패턴으로 매니저 간 통신. Assembly Definition으로 컴파일 단위 분리 시도. 다만 GotoEvent에서 씬 이름을 'Office{key}'로 하드코딩한 점, StageData/SoundData를 매번 new로 생성하여 JSON 파싱을 반복하는 비효율이 있음.",
+      "architecture_reason": "UI 시스템이 MVP 패턴(Model-View-Presenter)으로 잘 설계됨: Core(인터페이스/데이터), Model(이벤트/매니저), Presenter(뷰 컨트롤러)로 명확히 분리. JSON 기반 외부 설정(StageData, SoundData)으로 하드코딩 최소화. 이벤트 기반 통신(Action delegate)으로 시스템 간 결합도를 낮춤. 그러나 Singleton 과다 사용(7개 이상)으로 초기화 순서 의존성이 암묵적이며, Fracture 시스템과 UI 시스템 간 네임스페이스가 분리되어 있지만 WeaponScoreAdder가 두 시스템을 직접 참조하여 중재자 역할이 모호함.",
       "overall": 7
     },
-    "commits": 71,
+    "commits": 75,
     "contributors": 3,
     "days_since_last_commit": 0,
     "issues": 10,
     "risks": 5,
     "weekly_trend": [
       0,
-      6,
-      26,
-      39
+      8,
+      33,
+      34
     ],
-    "date": "2026-03-30"
+    "date": "2026-03-31"
   }
 ]
